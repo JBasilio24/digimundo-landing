@@ -3290,7 +3290,7 @@
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #8D82C4;
 			}
 
 			#header.alt.style3 .logo strong {
@@ -3414,7 +3414,7 @@
 		display: flex;
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
-		background-position: center;
+		background-position: center bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -3525,7 +3525,7 @@
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: rgba(141,130,196,1);
 		}
 
 		#banner.style3:after {
