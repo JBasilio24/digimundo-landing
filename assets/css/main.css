@@ -3402,12 +3402,24 @@
 
 /* Banner */
 
+	#banner.cloud {
+		background-image: url("../../images/logo.jpg");
+	}
+	#banner.mock {
+		background-image: url("../../images/mobile1.jpeg");
+	}
+	#banner.web {
+		background-image: url("../../images/1.jpg");
+	}
+	#banner.main {
+		background-image: url("../../images/bck.jpg");
+	}
+
 	#banner {
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/bck.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
