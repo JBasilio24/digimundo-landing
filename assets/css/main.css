@@ -3403,7 +3403,7 @@
 /* Banner */
 
 	#banner.cloud {
-		background-image: url("../../images/logo.jpg");
+		background-image: url("../../images/logoban.jpg");
 	}
 	#banner.mock {
 		background-image: url("../../images/mobile1.jpeg");
@@ -3452,7 +3452,7 @@
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
 			pointer-events: none;
-			background-color: rgba(36,41,67,0.7);
+			background-color: rgba(36,41,67,0.6);
 			content: '';
 			display: block;
 			height: 100%;
