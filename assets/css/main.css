@@ -4007,3 +4007,9 @@
 			opacity: 1;
 			visibility: visible;
 		}
+
+#team .inner {
+	padding: 0;
+	padding-bottom: 4em;
+	text-align: center;
+}

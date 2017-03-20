@@ -30,6 +30,11 @@
 [class^='imghvr-'] figcaption,
 [class*=' imghvr-'] figcaption {
   background-color: #135796;
+  background-image: url("../../images/team/bck.jpg");
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   padding-top: 30px;
   padding: 30px;
