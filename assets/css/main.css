@@ -48,6 +48,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	p {
+		text-align: justify;
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -3750,9 +3754,14 @@
 /* Footer */
 
 	#footer .copyright {
-		font-size: 0.8em;
+		text-align: center;
+		font-size: 0.9em;
 		list-style: none;
 		padding-left: 0;
+	}
+
+	#footer .inner {
+		text-align: center;
 	}
 
 		#footer .copyright li {
