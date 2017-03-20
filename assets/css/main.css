@@ -2754,7 +2754,7 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-top: 0 !important;
-	}
+	} 
 
 		.tiles + * {
 			border-top: 0 !important;
