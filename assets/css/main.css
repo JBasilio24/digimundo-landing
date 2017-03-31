@@ -3445,7 +3445,7 @@
 		background-image: url("../../images/CKban.png");
 	}
 	#banner.mock {
-		background-image: url("../../images/mobile1.jpeg");
+		background-image: url("../../images/mock/mobile1.jpeg");
 	}
 	#banner.web {
 		background-image: url("../../images/1.jpg");
@@ -4084,4 +4084,31 @@
 
 #cloud .inn figure {
 	margin: 10px;
+}
+
+
+#mock .inn {
+	padding: 0;
+	padding-bottom: 4em;
+	text-align: center !important;
+}
+
+#mock figcaption {
+	background-image: url("../../images/mock/1.jpeg");
+}
+
+#mock .inn figure {
+	max-width: 70%;
+}
+
+#mock .inn h3 {
+	padding: 5%;
+}
+
+#mock .inn p {
+	text-align: center;
+}
+
+#mock .inn figure {
+	margin: 30px;
 }
