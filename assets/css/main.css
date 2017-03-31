@@ -4046,6 +4046,10 @@
 			visibility: visible;
 		}
 
+#one .inner {
+	text-align: center;
+}
+
 #team .inner {
 	padding: 0;
 	padding-bottom: 4em;
@@ -4056,7 +4060,7 @@
 	background-image: url("../../images/team/bck.jpg");
 }
 
-#cloud .inner {
+#cloud .inn {
 	padding: 0;
 	padding-bottom: 4em;
 	text-align: center;
@@ -4066,18 +4070,18 @@
 	background-image: url("../../images/cloud/bck.jpg");
 }
 
-#cloud .inner figure, img {
-	max-width: 80%;
+#cloud .inn figure {
+	max-width: 70%;
 }
 
-#cloud .inner h3 {
+#cloud .inn h3 {
 	padding: 5%;
 }
 
-#cloud .inner p {
+#cloud .inn p {
 	text-align: center;
 }
 
-#cloud .inner figure {
+#cloud .inn figure {
 	margin: 10px;
 }
