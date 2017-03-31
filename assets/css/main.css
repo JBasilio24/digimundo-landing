@@ -4051,3 +4051,33 @@
 	padding-bottom: 4em;
 	text-align: center;
 }
+
+#team figcaption {
+	background-image: url("../../images/team/bck.jpg");
+}
+
+#cloud .inner {
+	padding: 0;
+	padding-bottom: 4em;
+	text-align: center;
+}
+
+#cloud figcaption {
+	background-image: url("../../images/cloud/bck.jpg");
+}
+
+#cloud .inner figure, img {
+	max-width: 80%;
+}
+
+#cloud .inner h3 {
+	padding: 5%;
+}
+
+#cloud .inner p {
+	text-align: center;
+}
+
+#cloud .inner figure {
+	margin: 10px;
+}
