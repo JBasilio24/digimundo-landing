@@ -3419,7 +3419,7 @@
 		background-image: url("../../images/bck.jpg");
 	}
 	#banner.error {
-		background-image: url("../../images/404.jpg");
+		background-image: url("../../images/4041.png");
 	}
 
 	#banner {
@@ -4011,9 +4011,9 @@
 			visibility: visible;
 		}
 
-#one .inner {
+/*#one .inner {
 	text-align: center;
-}
+}*/
 
 #team .inner {
 	padding: 0;
