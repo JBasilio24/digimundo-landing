@@ -5,7 +5,7 @@ if(isset($_POST['submit'])){
     $name = $_POST['first_name'];
     $subject = "Contacto desde Digimundo.";
     $subject2 = "Copia del mensaje enviado a Digimundo.";
-    $message = $name . " ". " Escribió lo siguiente:" . "\n\n" . $_POST['message'];
+    $message = $name . " ". " Escribio lo siguiente:" . "\n\n" . $_POST['message'];
     $message2 = "Esta es una copia de tu mensaje " . $first_name . "\n\n" . $_POST['message'];
 
     $headers = "De:" . $from;

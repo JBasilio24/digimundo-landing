@@ -3407,16 +3407,19 @@
 /* Banner */
 
 	#banner.cloud {
-		background-image: url("../../images/logoban.jpg");
+		background-image: url("../../images/CKban.png");
 	}
 	#banner.mock {
-		background-image: url("../../images/mobile1.jpeg");
+		background-image: url("../../images/mock/mobile1.jpeg");
 	}
 	#banner.web {
 		background-image: url("../../images/1.jpg");
 	}
 	#banner.main {
 		background-image: url("../../images/bck.jpg");
+	}
+	#banner.error {
+		background-image: url("../../images/4041.png");
 	}
 
 	#banner {
@@ -4008,8 +4011,22 @@
 			visibility: visible;
 		}
 
+/*#one .inner {
+	text-align: center;
+}*/
+
 #team .inner {
 	padding: 0;
 	padding-bottom: 4em;
+	text-align: center;
+}
+
+#team figcaption {
+	background-image: url("../../images/team/bck.jpg");
+}
+
+iframe {
+	width:90%;
+	height:42rem;
 	text-align: center;
 }
