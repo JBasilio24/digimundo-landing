@@ -4097,3 +4097,22 @@
 	
 	text-align: center;
 }
+
+.mockitems {
+	width: 25%;
+	display: block;
+	margin: auto;
+	box-shadow: none;
+}
+
+.mockitems button, slick-dots {
+	box-shadow: none;
+}
+
+.mockitems img {
+	width: 100%;
+}
+
+.mockitems p {
+	text-align: center;
+}
