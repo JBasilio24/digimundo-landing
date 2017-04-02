@@ -4077,3 +4077,23 @@
 #mock .inn figure {
 	margin: 30px;
 }
+
+.items {
+	width: 80%;
+	display: block;
+	margin: auto;
+	box-shadow: none;
+}
+
+.items button, slick-dots {
+	box-shadow: none;
+}
+
+.items img {
+	width: 100%;
+}
+
+.items p {
+	
+	text-align: center;
+}
