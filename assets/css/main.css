@@ -4035,9 +4035,9 @@ iframe {
 	text-align: center;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
 		#team figure {
-			max-width: 40%
+			max-width: 50%
 		}
 	}
 
