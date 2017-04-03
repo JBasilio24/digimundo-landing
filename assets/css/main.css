@@ -4013,10 +4013,6 @@
 			visibility: visible;
 		}
 
-/*#one .inner {
-	text-align: center;
-}*/
-
 #team {
 	display: flex;
 	flex-direction: row;
@@ -4030,7 +4026,6 @@
 }
 
 #team figcaption {
-	font-size: 3em;
 	background-image: url("../../images/team/bck.jpg");
 }
 
@@ -4039,3 +4034,39 @@ iframe {
 	height:42rem;
 	text-align: center;
 }
+
+@media screen and (max-width: 1280px) {
+		#team figure {
+			max-width: 40%
+		}
+	}
+
+@media screen and (max-width: 980px) {
+		#team figure {
+			max-width: 50%
+		}
+	}
+
+@media screen and (max-width: 736px) {
+		#team figure {
+			max-width: 50%
+		}
+	}
+
+@media screen and (max-width: 480px) {
+		#team figure {
+			max-width: 90%
+		}
+	}
+
+@media screen and (max-width: 360px) {
+		#team figure {
+			max-width: 90%
+		}
+	}
+
+@media screen and (max-width: 420px) {
+		#team figure {
+			max-width: 90%
+		}
+	}
