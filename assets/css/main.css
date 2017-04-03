@@ -3557,6 +3557,7 @@
 
 		#banner.style5:after {
 			background-color: #8ea9e8;
+			opacity: 0.6;
 		}
 
 		#banner.style6:after {
