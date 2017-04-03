@@ -3557,6 +3557,7 @@
 
 		#banner.style5:after {
 			background-color: #8ea9e8;
+			opacity: 0.6;
 		}
 
 		#banner.style6:after {
@@ -3639,6 +3640,7 @@
 
 	#main {
 		background-color: rgba(42,47,74,1);
+		flex-wrap: wrap;
 	}
 
 		#main > * {
@@ -4011,14 +4013,16 @@
 			visibility: visible;
 		}
 
-/*#one .inner {
-	text-align: center;
-}*/
+#team {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
 
-#team .inner {
-	padding: 0;
-	padding-bottom: 4em;
-	text-align: center;
+#team figure {
+	margin: 10px;
 }
 
 #team figcaption {
@@ -4030,3 +4034,39 @@ iframe {
 	height:42rem;
 	text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+		#team figure {
+			max-width: 50%
+		}
+	}
+
+@media screen and (max-width: 980px) {
+		#team figure {
+			max-width: 50%
+		}
+	}
+
+@media screen and (max-width: 736px) {
+		#team figure {
+			max-width: 50%
+		}
+	}
+
+@media screen and (max-width: 480px) {
+		#team figure {
+			max-width: 90%
+		}
+	}
+
+@media screen and (max-width: 360px) {
+		#team figure {
+			max-width: 90%
+		}
+	}
+
+@media screen and (max-width: 420px) {
+		#team figure {
+			max-width: 90%
+		}
+	}
