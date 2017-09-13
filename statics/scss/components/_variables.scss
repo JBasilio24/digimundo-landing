@@ -1,0 +1,16 @@
+$primary-color: #0b4269;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+$secondary-color: #f3f4f6;
+$shade-color: #5c5c5c;
+
+$text-color-primary: #3c3c3c;;
+$text-color-secondary: #5a5a5a;
+$text-color-shade: #dddddd;
+
+/** Sizez */
+$nav-heigth: 30px;
+
+
+/** Colors */
+$white: #fff;
