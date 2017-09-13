@@ -1,2 +1,44 @@
-a{text-decoration:none;color:#ddd;transition:all .3s}a:hover{color:#fff}body{background:#fff;font-family:'Open Sans', sans-serif;font-size:18px}header{background:url("../images/fondo_home.png") no-repeat top center;background-size:cover;height:100vh}header .logo-container{height:100%;max-width:100%;display:flex;justify-content:flex-start}header .logo-container img{align-self:center;max-width:220px}section{height:100vh}ul.nav{display:none;justify-content:space-around;font-weight:700;list-style-type:none;margin-top:0;margin-bottom:0;padding-left:2rem}ul.nav li{padding:5px 10px 10px 10px}ul.nav li a:hover{box-shadow:0px 2px 0px 0px rgba(255,255,255,0.8);border-radius:1px}.container{width:90%;height:100%;margin-left:auto;margin-right:auto}.footer{width:100%}.icon-container{color:#fff;cursor:pointer;transition:all .3s ease}.icon-container .material-icons{color:#ddd;transition:all .3s ease}.icon-container .material-icons:hover{color:#fff}.main-nav{width:100%;min-height:30px;padding:2rem 0 1rem;position:fixed;text-align:center}.main-nav .container{display:flex;justify-content:space-between}.main-nav img#logo-nav{display:none;height:2rem}#services{width:100%}#services .services-info{margin-top:-3rem;margin-left:auto;margin-right:auto;display:flex;flex-direction:column;align-items:center}#services .services-info img{width:211px}#services .services-info h2{color:#5c5c5c}@media screen and (max-height: 500px){#services .services-info{margin-top:2rem}}@media screen and (min-width: 700px){header .logo-container img{max-width:320px}.container{max-width:1280px;padding-bottom:1rem}.main-nav .container{box-shadow:0px 0.5px 0px 0px rgba(255,255,255,0.8)}.main-nav ul.nav{display:flex;align-content:flex-end}.main-nav ul.nav a{font-size:1rem}.main-nav img#logo-nav{display:flex}.main-nav .icon-container{display:none}}@media screen and (min-width: 900px){header .logo-container img{max-width:420px}}
-/*# sourceMappingURL=master.css.map */
+
+
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*Separators styles*/
+.separator {
+  width: 250px;
+  height: 0px;
+  border-top: solid 5px #424242;
+  margin: 10px 0;
+  text-align: center;
+  padding: 0;
+}
+.separator:after {
+  font-family: FontAwesome;
+  font-size: 1.7rem;
+  position: relative;
+  top: -1.05em;
+  display: inline-block;
+  padding: 0 .3em;
+  color: #5d5d5d;
+}
+.sep-services {
+  position: relative;
+}
+.sep-services img {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: -25px;
+  left: 40%;
+  right: 40%;
+  background-color: #FFF;
+  padding: 0 3px;
+}
+.sep-solutions:after {
+  background-color: #f3f3f3;
+  content: '\f0b1';
+}
