@@ -6,8 +6,6 @@ $(document).scroll(function(){
     $('#navbar-main').css({"background-color":"transparent"});
   }
 });
-
-
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function showMenu() {
@@ -28,4 +26,7 @@ window.onclick = function(event) {
     }
   }
 }
-
+// Prevent projects square redirect
+$("#projects-squares a").click(function(event){
+    event.preventDefault();
+});
