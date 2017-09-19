@@ -198,6 +198,24 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   max-width: 300px;
 }
+/*About Us section*/
+#about {
+  padding: 30px 0;
+}
+#us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 250px;
+  max-width: 1000px;
+  margin: 0 10px;
+}
+.mision,
+.vision {
+  min-width: 250px;
+  max-width: 500px;
+  margin: 0 auto;
+}
 /*Projects section*/
 #projects {
   background-image: url(../images/fondo.png);
@@ -518,6 +536,14 @@ figure.effect-chico:hover p {
   }
   #projects-squares {
     padding-top: 0px;
+  }
+  /*About Us section*/
+  #us {
+    margin: 0 auto;
+  }
+  .mision,
+  .vision {
+    max-width: 400px;
   }
 }
 
