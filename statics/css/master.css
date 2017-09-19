@@ -1,14 +1,18 @@
 /*Navigation bar styles*/
 /*Logo styles*/
+#navbar-main {
+  position: fixed;
+  width: 100%;
+}
 #navbar-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  margin: 20px 10px;
+  padding: 20px;
+  z-index: 30;
 }
 #logo-nav {
   width: 150px;
@@ -17,6 +21,7 @@
 .nav-content {
   position: absolute;
   right: 0;
+  padding-right: 20px;
 }
 /* Dropdown Button */
 .dropbtn {
@@ -142,7 +147,7 @@
   #navbar-container {
     width: 80%;
     max-width: 1300px;
-    margin: 20px auto;
+    margin: 0 auto;
     border-bottom: 1px solid #FFF;
     padding-bottom: 25px;
   }
