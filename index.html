@@ -18,22 +18,22 @@
   <link rel="stylesheet" href="statics/css/master.css">
 </head>
 <body>
-  <div class="main-nav">
-    <div class="container">
-      <img id="logo-nav" src="statics/images/logo_digimundo.png" alt="Digimundo LOGO">
-      <ul class="nav">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTAFOLIO</a></li>
-        <li><a href="#">CONTACT US</a></li>
-      </ul>
-      <span class="icon-container"><i class="material-icons">menu</i></span>
+  <div id="navbar-container">
+    <img id="logo-nav" src="statics/images/logo.png" alt="Digimundo LOGO">
+    <div class="nav-content">
+      <button onclick="showMenu()" class="dropbtn icon-container fa fa-bars"></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">SERVICES</a>
+        <a href="#">PORTAFOLIO</a>
+        <a href="#">CONTACT US</a>
+      </div>
     </div>
   </div>
 
   <header>
-    <div class="container">
+    <div id="home-container">
       <div class="logo-container">
         <img src="statics/images/logo_digimundo_large.png" alt="">
       </div>
@@ -81,6 +81,6 @@
   <!-- Prefixfree -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" type="text/javascript"></script>
   <!-- Main JS file -->
-  <script src="statics/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="statics/js/main.js"></script>
 </body>
 </html>
