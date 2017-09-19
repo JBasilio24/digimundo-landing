@@ -3,6 +3,7 @@
 #navbar-main {
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 #navbar-container {
   display: flex;
@@ -12,7 +13,7 @@
   right: 0;
   left: 0;
   padding: 20px;
-  z-index: 30;
+  position: relative;
 }
 #logo-nav {
   width: 150px;
@@ -150,6 +151,9 @@
     margin: 0 auto;
     border-bottom: 1px solid #FFF;
     padding-bottom: 25px;
+  }
+  .nav-content {
+    padding-right: 0;
   }
   .dropbtn {
     display: none;
