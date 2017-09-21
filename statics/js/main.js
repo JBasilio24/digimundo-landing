@@ -1,7 +1,7 @@
 // Change background color for navbar
 $(document).scroll(function(){
-  if($(this).scrollTop() > 10) {   
-    $('#navbar-main').css({"background-color":"rgba(0,0,0,0.2)"});
+  if($(this).scrollTop() > 100) {   
+    $('#navbar-main').css({"background-color":"rgba(0,0,0,0.8)"});
   } else {
     $('#navbar-main').css({"background-color":"transparent"});
   }
@@ -28,5 +28,8 @@ window.onclick = function(event) {
 }
 // Prevent projects square redirect
 $("#projects-squares a").click(function(event){
+    event.preventDefault();
+});
+$("#team a").click(function(event){
     event.preventDefault();
 });
