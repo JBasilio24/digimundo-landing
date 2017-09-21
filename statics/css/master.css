@@ -523,18 +523,24 @@ footer {
 }
 footer .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+  min-height: 60px;
 }
 footer .copy {
-  margin: 10px auto;
   min-width: 300px;
-  text-align: center;
 }
-footer .socialMenu {
-  margin: 10px auto;
-  min-width: 300px;
-  text-align: center;
+.socialMenu li {
+  list-style: none;
+  display: inline-block;
+}
+.socialMenu li a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 10px;
+  font-size: 20px;
 }
 
 
