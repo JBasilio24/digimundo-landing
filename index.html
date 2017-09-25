@@ -7,7 +7,17 @@
   <meta name="keywords" content="internet of things, asesoria digital, web development, app programing, ios android" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="author" content="Digimundo Technologies" />
-
+  <!-- Icons -->
+  <link rel="shortcut icon" href="favicon.ico" type="icon/x-icon"/>
+  <link rel="apple-touch-icon" href="statics/icon/apple-touch-icon.png"/>
+  <link rel="apple-touch-icon" sizes="57x57" href="statics/icon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="statics/icon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="statics/icon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="statics/icon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="statics/icon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="statics/icon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="statics/icon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="statics/icon/apple-touch-icon-180x180.png" />
   <!-- Normalize -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
   <!-- Google Fonts -->
@@ -25,12 +35,12 @@
       <div class="nav-content">
         <button onclick="showMenu()" class="dropbtn icon-container fa fa-bars"></button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#home">HOME</a>
-          <a href="#services">SERVICES</a>
-          <a href="#about">ABOUT US</a>
-          <a href="#projects">PORTAFOLIO</a>
-          <a href="#team">TEAM</a>
-          <a href="#contact">CONTACT US</a>
+          <a href="#home">INICIO</a>
+          <a href="#services">SERVICIOS</a>
+          <a href="#about">NOSOTROS</a>
+          <a href="#projects-squares">PROYECTOS</a>
+          <!-- <a href="#team">EQUIPO</a> -->
+          <a href="#contact">CONTACTO</a>
         </div>
       </div>
     </div>
@@ -206,7 +216,8 @@
           </figure>
         </div>
       </section>
-      <section id="team">  <!-- /EQUIPO -->
+      <!-- /EQUIPO -->
+<!--       <section id="team">  
         <div class="services-info">
           <div class="separator sep-services">
             <img src="statics/images/head-logo.png" alt="Services separator">
@@ -214,7 +225,6 @@
           <h2>Equipo</h2>
         </div>
         <div class="team-container">
-          <!-- Team 1 -->
           <div class="ih-item square team colored effect4">
             <a href="#">
               <div class="img"><img src="statics/images/team.jpg" alt="img"></div>
@@ -226,8 +236,6 @@
               </div>
             </a>
           </div>
-          <!-- Team 1 -->
-          <!-- Team 2 -->
           <div class="ih-item square team colored effect4">
             <a href="#">
               <div class="img"><img src="statics/images/team.jpg" alt="img"></div>
@@ -239,8 +247,6 @@
               </div>
             </a>
           </div>
-          <!-- Team 2 -->
-          <!-- Team 3 -->
           <div class="ih-item square team colored effect4">
             <a href="#">
               <div class="img"><img src="statics/images/team.jpg" alt="img"></div>
@@ -252,8 +258,6 @@
               </div>
             </a>
           </div>
-          <!-- Team 3 -->
-          <!-- Team 4 -->
           <div class="ih-item square team colored effect4">
             <a href="#">
               <div class="img"><img src="statics/images/team.jpg" alt="img"></div>
@@ -265,8 +269,6 @@
               </div>
             </a>
           </div>
-          <!-- Team 4 -->
-          <!-- Team 5 -->
           <div class="ih-item square team colored effect4">
             <a href="#">
               <div class="img"><img src="statics/images/team.jpg" alt="img"></div>
@@ -278,8 +280,6 @@
               </div>
             </a>
           </div>
-          <!-- Team 5 -->
-          <!-- Team 6 -->
           <div class="ih-item square team colored effect4">
             <a href="#">
               <div class="img"><img src="statics/images/team.jpg" alt="img"></div>
@@ -291,9 +291,9 @@
               </div>
             </a>
           </div>
-          <!-- Team 6 -->
         </div>
-      </section>  <!-- /EQUIPO -->
+      </section> -->  
+      <!-- /EQUIPO -->
       <section id="clients">  <!-- /CLIENTES -->
         <div class="services-info">
           <div class="separator sep-services">
@@ -308,7 +308,54 @@
         </div>
       </section>  <!-- /CLIENTES -->
       <section id="contact">  <!-- /CONTACTO -->
-
+        <div class="services-info">
+          <div class="separator sep-services">
+            <img src="statics/images/head-logo.png" alt="Services separator">
+          </div>  
+          <h2>Contacto</h2>
+          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, magnam..</p>
+        </div>
+        <div class="columns">
+          <div class="info">
+            <ul>
+              <li>
+                <img src="statics/images/contacto01.png" alt="Contact images">
+                <p class="contactText">53985419 / 53985480<br>11063976 Ext. 114</p>
+              </li>
+              <li>
+                <img src="statics/images/contacto02.png" alt="Contact images">
+                <p class="contactText">digimundo@tescacorporation.com</p>
+              </li>
+              <li>
+                <img src="statics/images/contacto03.png" alt="Contact images">
+                <p class="contactText">Circuito Muesos #29 Ciudad Satélite, Tlalnepantla Estado de México.</p>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="contactForm">
+            <form method="post" action="contact.php">
+              <div class="form-group ">
+                <label for="name" class="sr-only">Nombre</label>
+                <input name="name" id="name" class="form-control" placeholder="Nombre" type="text">
+              </div>
+              <div class="form-group ">
+                <label for="email" class="sr-only">Correo</label>
+                <input name="email" id="email" class="form-control" placeholder="Correo" type="email">
+              </div>
+              <div class="form-group">
+                <label for="subject" class="sr-only">Asunto</label>
+                <input name="subject" id="subject" class="form-control" placeholder="Asunto" type="text">
+              </div>
+              <div class="form-group ">
+                <label for="message" class="sr-only">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="form-group ">
+                <input class="btn btn-primary" name="submit" value="Enviar" type="submit">
+              </div>
+            </form>
+          </div> -->
+        </div>
       </section>  <!-- /CONTACTO -->
     </div>
   </main>
