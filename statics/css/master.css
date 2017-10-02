@@ -537,7 +537,7 @@ figure.effect-chico:hover p {
   flex-wrap: wrap;
 }
 .columns .info,
-.columns .contactForm {
+.columns .mapContainer {
   min-width: 300px;
   max-width: 500px;
   height: inherit;
