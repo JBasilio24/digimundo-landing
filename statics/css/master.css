@@ -512,11 +512,15 @@ figure.effect-chico:hover p {
   align-items: center;
   padding-bottom: 50px;
 }
-.client-imgage {
+.client-image {
   width: 100px;
   height: auto;
   background-color: transparent !important;
   margin: 0 50px;
+}
+.client-image.cristobal {
+  width: 200px;
+  margin: 0;
 }
 /*Contact section*/
 #contact {
