@@ -2,6 +2,10 @@
 body {
   color: #5d5d5d;
 }
+#pageContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 section:focus {
   outline: none;
 }
@@ -15,6 +19,7 @@ h1, h2, h3, h4, h5 {
 #navbar-main {
   position: fixed;
   width: 100%;
+  max-width: 1400px;
   z-index: 3;
 }
 #navbar-container {
@@ -512,11 +517,15 @@ figure.effect-chico:hover p {
   align-items: center;
   padding-bottom: 50px;
 }
-.client-imgage {
+.client-image {
   width: 100px;
   height: auto;
   background-color: transparent !important;
   margin: 0 50px;
+}
+.client-image.cristobal {
+  width: 200px;
+  margin: 0;
 }
 /*Contact section*/
 #contact {
@@ -533,10 +542,14 @@ figure.effect-chico:hover p {
   flex-wrap: wrap;
 }
 .columns .info,
-.columns .contactForm {
+.columns .mapContainer {
   min-width: 300px;
   max-width: 500px;
   height: inherit;
+}
+.columns .mapContainer iframe {
+  width: 100%;
+  height: 400px;
 }
 .columns .info {
   display: flex;
@@ -602,6 +615,7 @@ footer {
   color: #FFF;
   padding: 0;
   margin: 0;
+  margin-top: 50px;
 }
 footer .footer {
   display: flex;
@@ -609,6 +623,7 @@ footer .footer {
   flex-wrap: wrap;
   align-items: center;
   min-height: 60px;
+  text-align: center;
 }
 footer .copy {
   min-width: 300px;
@@ -634,7 +649,7 @@ footer .copy {
   /*Navbar styles*/
   #navbar-container {
     width: 80%;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
     border-bottom: 1px solid #FFF;
     padding-bottom: 25px;
@@ -708,13 +723,16 @@ footer .copy {
     flex-wrap: wrap;
   }
   .columns .info,
-  .columns .contactForm {
+  .columns .mapContainer {
     width: 45%;
     min-height: 300px;
+    margin: 0 auto;
   }
   .info p {
-    max-width: 200px;
-    /*max-width: 300px;*/
+    max-width: none;
+  }
+  footer .footer {
+    text-align: left;
   }
 }
 
@@ -764,10 +782,14 @@ footer .copy {
   .ih-item.square.team {
     margin: 20px 10px;
   }
+  /*Contact section*/
+  .columns .info,
+  .columns .mapContainer {
+    margin: 0;
+  }
   footer .copy {
     margin-left: 10px;
     min-width: 300px;
-    text-align: center;
   }
   footer .socialMenu {
     margin-right: 10px;
