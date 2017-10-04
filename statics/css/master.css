@@ -515,13 +515,12 @@ figure.effect-chico:hover p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 }
 .client-image {
   width: 100px;
   height: auto;
   background-color: transparent !important;
-  margin: 0 50px;
+  margin: 25px 50px;
 }
 .client-image.cristobal {
   width: 200px;
