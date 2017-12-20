@@ -1,6 +1,22 @@
 /*General styles*/
 body {
-  color: #5d5d5d;
+  position: relative;
+  background-image: url('https://static1.squarespace.com/static/515f269de4b0ef9b86cf32df/t/569ef58005f8e26bde177ce6/1453258125662/');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000000;
+}
+div.container{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,0,0,0.3);
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
 }
 h1, h2, h3, h4, h5 {
   text-align: center;
@@ -10,6 +26,7 @@ h1, h2, h3, h4, h5 {
 /*Navigation bar styles*/
 /*Logo styles*/
 #navbar-main {
+  background-color: rgba(0,0,0,0.85);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -22,7 +39,7 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  border-bottom: 2px solid #d1c1c1;
+  border-bottom: 2px solid gray;
 }
 #logo-nav {
   width: 150px;
@@ -35,32 +52,18 @@ h1, h2, h3, h4, h5 {
 }
 div.nav-content a{
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #c1c1c1;
 	margin-right: 10px;
 	padding: 5px;
 }
 div.nav-content a:hover{
 	/*background-color: rgba(241, 159, 48, 0.4);*/
-	color:rgba(241, 159, 48, 0.4);
-	border-bottom: 2px solid #c1c1c1;
+	color:rgba(241, 159, 48);
+	border-bottom: 2px solid #f19f30;
 }
 
-/*Home section styles*/
-div.container {
-  background-image: url("https://professor-falken.com/wp-content/uploads/2016/05/taza-de-cafe-ordenador-portatil-macbook-oficina-cafe-Fondos-de-Pantalla-professor-falken.com_.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /*background-image: url("http://en.fsa.gov.ru/public/uploads/news/image/new/0a7722d1bb10086f9bd159f09af096d1.jpg");
-  */ width: 100%;
-  height:auto;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-}
-/*Container begin*/
 .inicio{
-	margin: 0 auto;
-	margin-top: 145px;
+	margin-top: 100px;
 	margin-bottom:55px;
 	width: 60%;
 	height: auto;
@@ -69,42 +72,15 @@ div.hero{
 	width: auto;
 	align-items: center;
 }
-img.logo{
+.hero img.logo{
 	float: center;
 	height: 150px;
 	width: 300px;
 }
-/*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
 
-/********************************/
-/*       Fade Bs-carousel       */
-/********************************/
-.fade-carousel {
-    box-shadow: 1px 1px 4px 4px #999;
-    position: relative;
-    height: 400px;
-}
-.fade-carousel .carousel-inner .item {
-    height: 400px;
-}
-.fade-carousel .carousel-indicators > li {
-    background-color: #f39c12;
-    border-color: #f39c12;
-    opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-  width: 10px;
-  height: 10px;
-  opacity: 1;
-}
-/********************************/
-/*          Hero Headers        */
-/********************************/
 .hero {
+    top: 0;
+    left: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,12 +88,6 @@ Image credits: unsplash.com
     color: #fff;
     text-align: center center;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
 	position: center center;
@@ -126,118 +96,27 @@ Image credits: unsplash.com
     margin: 0;
     padding: 0;
 }
-
-.fade-carousel .carousel-inner .item .hero {
-    opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s;
-        -ms-transition: 2s all ease-in-out .1s;
-         -o-transition: 2s all ease-in-out .1s;
-            transition: 2s all ease-in-out .1s;
+div.nuestros-servicios{
+  width: 60%
+  float: center;
 }
-.fade-carousel .carousel-inner .item.active .hero {
-    opacity: 1;
-    -webkit-transition: 4s all ease-in-out .1s;
-       -moz-transition: 4s all ease-in-out .1s;
-        -ms-transition: 4s all ease-in-out .1s;
-         -o-transition: 4s all ease-in-out .1s;
-            transition: 4s all ease-in-out .1s;
-}
-
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    z-index: 2;
-    background-color: #080d15;
-    opacity: .7;
-}
-
-/********************************/
-/*       Slides backgrounds     */
-/********************************/
-.fade-carousel .slides .slide-1,
-.fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
-  height: 400px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.fade-carousel .slides .slide-1 {
-  background-image: url(https://static1.squarespace.com/static/515f269de4b0ef9b86cf32df/t/569ef58005f8e26bde177ce6/1453258125662/);
-}
-.fade-carousel .slides .slide-2 {
-  background-image: url(http://www.blogdelaspersonasreales.com/wp-content/uploads/2017/02/Blog_Post-Head_Machote-NoOficina-1.gif);
-}
-.fade-carousel .slides .slide-3 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
-}
-
-/********************************/
-/*          Media Queries       */
-/********************************/
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 20px; }
-}
-
-footer {
-  background-color: rgba(42,66,89,.95);
-  color: #FFF;
-  padding: 0;
-  margin: 0;
-}
-footer .footer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  min-height: 60px;
-}
-footer .copy {
-  min-width: 300px;
-  font-size: 20px;
-}
-.socialMenu li {
-  list-style: none;
-  display: inline-block;
-}
-.socialMenu li a {
-  list-style: none;
-  text-decoration: none;
-  color: #FFF;
-  padding: 0 10px;
-  font-size: 25px;
-}
-
-
 .grid {
+  width: 60%;
+  clear: both;
   position: relative;
   margin: 0 auto;
   padding: 1em 0 4em;
-  list-style: none;
-  text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 /* Common style */
 .grid figure {
   position: relative;
-  float: left;
+  float: center;
   overflow: hidden;
-  margin-right: 15px;
-  min-width: 175px;
-  max-width: 200px;
-  max-height: 225px;
+  margin: auto;
   width: 48%;
   background: #348FB0;
   text-align: center;
@@ -348,7 +227,7 @@ figure.effect-chico:hover p {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 980px ) {
   .content {
     padding: 0 10px;
     text-align: center;
@@ -359,8 +238,7 @@ figure.effect-chico:hover p {
     margin: 10px auto;
     width: 100%;
   }
-}
-/*Team section*/
+}/*Team section*/
 #team .sep-services img {
   background-color: #f3f4f6;
 }
@@ -401,4 +279,35 @@ figure.effect-chico:hover p {
   font-size: 20px;
   font-weight: bold;
   color: #FFF;
+}
+
+
+
+footer {
+  background-color: rgba(42,66,89,.95);
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 60px;
+}
+footer .copy {
+  min-width: 300px;
+  font-size: 20px;
+}
+.socialMenu li {
+  list-style: none;
+  display: inline-block;
+}
+.socialMenu li a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 10px;
+  font-size: 25px;
 }
