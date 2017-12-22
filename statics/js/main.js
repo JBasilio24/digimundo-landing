@@ -1,26 +1,39 @@
 //Show and Hide our services
 $(document).ready(function(){
+  if($("#oculto").css({'display':"False"})){
 		$("#mostrar").on( "click", function() {
-			$('#oculto').show("swing");
-		 });
-		$("#ocultar").on( "click", function() {
-			$('#mostrar').hide();
-			$('.nuestros-servicios').hide();
-		});
+			$('#oculto').hide("slow").fadeIn(2000);
+      //$('#navbar-main').hide("slow");
+      $('.container').css({'background-color':"rgba(0,0,0,.65)"});
+      $('.logo').css({'display':"none"});
+    });}
+    else{
+		$("#mostrar").on( "click", function() {
+			$('#oculto').hide();
+		});}
 	});
 //Show logo
   $(document).ready(function()
   {
-   $('.logo').hide().fadeIn(4000);
+   $('.logo').hide().fadeIn(3000);
   });
+//Show footer
+$(function(){
+  $('#mostrar').click(function () {
+    $('.footer').fadeIn(1000);
+    $('html, body').animate({
+       scrollTop: $(document).height()
+    }, 'slow');
+    return false;
+  });
+});
 
-/*
 // Change background color for navbar
 $(document).scroll(function(){
-  if($(this).scrollTop() > 100) {
-    $('#navbar-main').css({"background-color":"rgba(0,0,0,0.8)"});
+  if($(this).scrollTop() > 15) {
+    $('#navbar-main').css({'display':"none"});
   } else {
-    $('#navbar-main').css({"background-color":"transparent"});
+    $('#navbar-main').css({'display':"block"});
   }
 });
 /* When the user clicks on the button,
