@@ -58,50 +58,113 @@ div.nav-content a{
 }
 div.nav-content a:hover{
 	/*background-color: rgba(241, 159, 48, 0.4);*/
-	color:rgba(241, 159, 48);
-	border-bottom: 2px solid #f19f30;
+	/*color:rgba(241, 159, 48,0.8);*/
+	border-bottom: 2px solid #3085F1;
 }
 
+/*parpadear cotiza*/
+#cotiza{
+  color: #F17330;
+  font-size: 18px;
+  font-weight: bold;
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo{
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes parpadeo {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+@keyframes parpadeo {
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
 .inicio{
-	margin-top: 100px;
-	margin-bottom:55px;
-	width: 60%;
+  position: relative;
+	margin-top: 75px;
+	margin-bottom:0px;
 	height: auto;
 }
 div.hero{
-	width: auto;
-	align-items: center;
+  position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 30%;
+	margin: auto;
 }
 .hero img.logo{
 	float: center;
-	height: 150px;
-	width: 300px;
+}
+.desplegable{
+  vertical-align: bottom;
+  margin-bottom: 15px;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 768px){
+  .desplegable{
+    height: auto;
+    width: auto;
+  }
 }
 
-.hero {
-    top: 0;
-    left: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    color: #fff;
-    text-align: center center;
-    text-transform: uppercase;
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
 }
-.hero h1 {
-	position: center center;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+.btn-theme:hover a{
+    color: #fff;
+    border-color: #fff;
+}
+.btn-theme a::after{
+  color: #fff;
+}
+.container-services{
+  width: 100%;
+  height: 476px;
 }
 div.nuestros-servicios{
-  width: 60%
-  float: center;
+  display: none;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  margin: 5px auto;
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  height: auto;
+  width: auto;
+}
+.titulo{
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #fff;
+
 }
 .grid {
-  width: 60%;
+  width: 80%;
   clear: both;
   position: relative;
   margin: 0 auto;
@@ -284,6 +347,7 @@ figure.effect-chico:hover p {
 
 
 footer {
+  width: 100%;
   background-color: rgba(42,66,89,.95);
   color: #FFF;
   padding: 0;

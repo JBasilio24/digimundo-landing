@@ -1,13 +1,30 @@
+//Show and Hide our services
+$(document).ready(function(){
+		$("#mostrar").on( "click", function() {
+			$('#oculto').show("swing");
+		 });
+		$("#ocultar").on( "click", function() {
+			$('#mostrar').hide();
+			$('.nuestros-servicios').hide();
+		});
+	});
+//Show logo
+  $(document).ready(function()
+  {
+   $('.logo').hide().fadeIn(4000);
+  });
+
+/*
 // Change background color for navbar
 $(document).scroll(function(){
-  if($(this).scrollTop() > 100) {   
+  if($(this).scrollTop() > 100) {
     $('#navbar-main').css({"background-color":"rgba(0,0,0,0.8)"});
   } else {
     $('#navbar-main').css({"background-color":"transparent"});
   }
 });
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content
 function showMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -43,8 +60,8 @@ $('a[href*="#"]')
 .click(function(event) {
 // On-page links
 if (
-  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-  && 
+  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+  &&
   location.hostname == this.hostname
   ) {
 // Figure out element to scroll to
@@ -72,4 +89,4 @@ $target.focus(); // Set focus again
 });
 }
 }
-});
+});*/
