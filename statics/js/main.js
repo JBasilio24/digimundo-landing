@@ -2,23 +2,39 @@
 $(document).ready(function(){
   if($("#oculto").css({'display':"False"})){
 		$("#mostrar").on( "click", function() {
-			$('#oculto').hide("slow").fadeIn(2000);
+      $('#oculto').css({'display':"block"});
+      $('#ocultar').css({'display':"block"});
+      //$('#mostrar').css({'position':"absolute"});
+      //$('#oculto').slideDown(2000);
       //$('#navbar-main').hide("slow");
       $('.container').css({'background-color':"rgba(0,0,0,.65)"});
       $('.logo').css({'display':"none"});
+      $('#mostrar').css({'display':"none"});
     });}
-    else{
-		$("#mostrar").on( "click", function() {
-			$('#oculto').hide();
-		});}
 	});
+/*
+$(document).ready(function(){
+  $("#ocultar").on( "click", function() {
+    $('#oculto').hide();
+    $('#ocultar').css({'display':"none"});
+    $('#ocultar').css({'display':"none"});
+    $('#mostrar').css({'display':"block"});
+  });
+});*/
+/*//change icon
+$("#mostrar").click(function(){
+        $(".fa").removeClass("fa-angle-up");
+        $(this).children("i").addClass("fa-angle-down");
+    });*/
+
+
 //Show logo
   $(document).ready(function()
   {
    $('.logo').hide().fadeIn(3000);
   });
 //Show footer
-$(function(){
+/*$(function(){
   $('#mostrar').click(function () {
     $('.footer').fadeIn(1000);
     $('html, body').animate({
@@ -27,7 +43,7 @@ $(function(){
     return false;
   });
 });
-
+*/
 // Change background color for navbar
 $(document).scroll(function(){
   if($(this).scrollTop() > 15) {
@@ -36,8 +52,8 @@ $(document).scroll(function(){
     $('#navbar-main').css({'display':"block"});
   }
 });
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content
+/*When the user clicks on the button,
+toggle between hiding and showing the dropdown content*/
 function showMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -56,6 +72,7 @@ window.onclick = function(event) {
     }
   }
 }
+/*
 // Prevent projects square redirect
 $("#projects-squares a").click(function(event){
   event.preventDefault();

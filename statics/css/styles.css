@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5 {
 /*Navigation bar styles*/
 /*Logo styles*/
 #navbar-main {
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0,0,0,0.4);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -57,6 +57,50 @@ div.nav-content a{
 	margin-right: 10px;
 	padding: 5px;
 }
+Dropdown Button */
+.dropbtn {
+  background-color: #346585;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #529FD1;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+  position: absolute;
+  right: 0;
+}
 div.nav-content a:hover{
 	/*background-color: rgba(241, 159, 48, 0.4);*/
 	/*color:rgba(241, 159, 48,0.8);*/
@@ -65,9 +109,13 @@ div.nav-content a:hover{
 
 /*parpadear cotiza*/
 #cotiza{
-  color: #F17330;
+  /*box-shadow: inset 0 0 0 4px #555953;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  font-family: sans-serif;
+  background-color: #186681;
   font-size: 18px;
-  font-weight: bold;
   animation-name: parpadeo;
   animation-duration: 3s;
   animation-timing-function: linear;
@@ -114,6 +162,7 @@ div.hero{
 }
 .desplegable{
   vertical-align: bottom;
+  margin-top:45px;
   margin-bottom: 15px;
   text-align: center;
   width: auto;
@@ -125,25 +174,55 @@ div.hero{
     width: auto;
   }
 }
-
-.btn-min-block {
-    min-width: 170px;
-    line-height: 26px;
+.boton{
+  border: 2px solid #fff;
+  min-width: 170px;
+  line-height: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
 }
-
-.btn-theme {
-    color: #fff;
-    background-color: transparent;
-    margin-right: 15px;
+.boton:hover{
+  color: #fff;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  text-decoration: none;
+  background-color: rgba(0,0,0,.9);
+  box-shadow: 1px 2px #ffffff;
 }
+.end{
+  width: auto;
 
-.btn-theme:hover a{
-    color: #fff;
-    border-color: #fff;
+}
+#ocultar{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  min-width: 170px;
+  line-height: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+  text-align: center;
+  width: 15%;
+}
+.container-services-oculto{
+  width: 100%;
+  height: 515px;
 }
 .container-services{
   width: 100%;
-  height: 476px;
+  height: 515px;
 }
 div.nuestros-servicios{
   display: none;
@@ -152,7 +231,7 @@ div.nuestros-servicios{
   margin: 5px auto;
   padding: 20px;
   padding-top: 0;
-  border: 2px solid #fff;
+  padding-bottom: 0px;
   margin-top:20px;
   margin-top: 0;
   height: auto;
@@ -162,7 +241,8 @@ div.nuestros-servicios{
   padding: 0;
 }
 .centrar,
-.titulo{
+.titulo,
+.nuestros-servicios{
   position: absolute;
 	top: 0;
 	bottom: 0;
@@ -184,6 +264,7 @@ div.nuestros-servicios{
   position: relative;
   margin: 0 auto;
   padding: 4em 0 1em;
+  padding-bottom: 0px;
 
   display: flex;
   flex-direction: row;
