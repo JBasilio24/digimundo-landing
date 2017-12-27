@@ -1,25 +1,29 @@
 //Show and Hide our services
 $(document).ready(function(){
-  if($("#oculto").css({'display':"False"})){
 		$("#mostrar").on( "click", function() {
-      $('#oculto').css({'display':"block"});
+      $('#oculto').slideDown(1500);
       $('#ocultar').css({'display':"block"});
       //$('#mostrar').css({'position':"absolute"});
       //$('#oculto').slideDown(2000);
       //$('#navbar-main').hide("slow");
       $('.container').css({'background-color':"rgba(0,0,0,.65)"});
-      $('.logo').css({'display':"none"});
+      $('.hero').css({'display':"none"});
       $('#mostrar').css({'display':"none"});
-    });}
 	});
-/*
+});
+
 $(document).ready(function(){
   $("#ocultar").on( "click", function() {
-    $('#oculto').hide();
     $('#ocultar').css({'display':"none"});
     $('#ocultar').css({'display':"none"});
-    $('#mostrar').css({'display':"block"});
   });
+});
+//Change background-image in our services
+/*$(document).ready(function(){
+	$(".effect-chico").mouseover(function(){
+		$('.fondo').fadeIn(2000);
+		$('.imagen').hide();
+	});
 });*/
 /*//change icon
 $("#mostrar").click(function(){
@@ -61,7 +65,6 @@ function showMenu() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -72,6 +75,26 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+/*
+$(function () {
+    var options = {
+        facebook: "profile.php?id=100011217752681", // Facebook page ID
+        whatsapp: "52-55-81-77-73-95", // WhatsApp number
+        call: "52-55-81-77-73-95", // Call phone number
+        company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
+        greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
+        call_to_action: "Es un placer presentarle DIGIMUNDO TECHNOLOGIES co", // Call to action
+        button_color: "#129BF4", // Color of button
+        position: "right", // Position may be 'right' or 'left'
+        order: "facebook,whatsapp,call" // Order of buttons
+    };
+    var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+});*/
 /*
 // Prevent projects square redirect
 $("#projects-squares a").click(function(event){

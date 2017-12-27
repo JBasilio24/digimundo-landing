@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5 {
   color: #5d5d5d;
   text-transform: uppercase;
 }
-
 /*Navigation bar styles*/
 /*Logo styles*/
 #navbar-main {
@@ -42,7 +41,7 @@ h1, h2, h3, h4, h5 {
   z-index: 3;
 }
 #navbar-container {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -129,7 +128,6 @@ div.nav-content a:hover{
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
   -webkit-animation-name:parpadeo;
   -webkit-animation-duration: 2s;
   -webkit-animation-timing-function: linear;
@@ -223,12 +221,10 @@ button{
   text-align: center;
   width: 15%;
 }
-
 .container-services{
 	width: 100%;
-	height: 665px;
+	height: 560px;
 }
-
 div.nuestros-servicios{
   display: none;
   position: relative;
@@ -397,21 +393,6 @@ figure.effect-chico:hover p {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-@media screen and (max-width: 980px ) {
-  .content {
-    padding: 0 10px;
-    text-align: center;
-  }
-	.grid{
-		padding-top: 0px;
-	}
-  .grid figure {
-    display: inline-block;
-    float: none;
-    margin: 10px auto;
-    width: 100%;
-  }
-}
 /*Team section*/
 #team .sep-services img {
   background-color: #f3f4f6;
@@ -454,9 +435,6 @@ figure.effect-chico:hover p {
   font-weight: bold;
   color: #FFF;
 }
-
-
-
 footer {
  width: 100%;
   background-color: rgba(42,66,89,.95);
@@ -465,7 +443,6 @@ footer {
   margin: 0;
 }
 footer .footer {
-
   display: flex;
   margin-bottom: 0px;
   justify-content: space-around;
@@ -488,8 +465,62 @@ footer .copy {
   padding: 0 10px;
   font-size: 25px;
 }
-/*Media querys for devices*/
-@media screen and (min-width: 768px){
+@media screen and (max-heigth: 1300px){
+	.nuestros-servicios{
+	  position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 50%;
+		height: 30%;
+		margin: auto;
+	}
+	.dropbtn {
+	  background-color: transparent;
+	  color: white;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  border-radius: 100px;
+	}
+	/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: #186681;
+	}
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content{
+	  display: none;
+	  position: absolute;
+	  background-color: rgba(0,0,0,.5);
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+	/* Change color of dropdown links on hover
+	.dropdown-content a:hover {background-color: #f1f1f1}*/
+
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {
+	  display:block;
+	  position: absolute;
+	  right: 0;
+	}
+}
+@media screen and (min-width:  1000px){
   /*Navbar styles*/
   #navbar-container {
     width: 80%;
@@ -519,7 +550,6 @@ footer .copy {
   .nav-content {
     padding-right: 0;
   }
-
   .dropbtn {
     display: none;
   }
@@ -541,6 +571,7 @@ footer .copy {
   }
 	.container-services{
 	  position: static;
+		padding-top: 20px;
 	  width: 100%;
 	  height: 515px;
 	}
@@ -564,55 +595,11 @@ footer .copy {
   text-align: left;
 }
 }
-@media screen and (max-width: 1025px) and (min-width: 768px){
-	.container-services{
-		height: 1240px;
-	}
-	#titulo{
-		padding-top: 5em;
-	}
-	.services{
-		padding: 10px;
-	}
-	.grid{
-		margin-top: 2em;
-		padding-top: 30px;
-	}
-	.grid figure {
-    display: inline-block;
-    float: none;
-    margin: 10px auto;
-    width: 100%;
-  }
-	body {
-		margin: 0 auto;
-		height: auto;
-		position: relative;
-		background-image: url('../images/image1.gif');
-		/*background-image:url('../images/principal.jpg');*/
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-	}
-}
-@media screen and (min-width: 1025px) and (max-width: 1366px){
-	.container-services{
-		height: 884px;
-	}
-	#titulo{
-		padding-top: 2em;
-	}
-	.services{
-		padding: 10px;
-	}
-	.grid{
-		margin-top: 2em;
-		padding-top: 0px;
-	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
-	}
-}
+
+    /*@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+			.container-services{
+			  position: static;
+			  width: 100%;
+			  height: 1200px;
+			}
+		}*/
