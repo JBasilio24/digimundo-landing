@@ -15,13 +15,12 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-div.container{
+div.container-fluid{
   position: absolute;
   padding: 0;
   margin: 0 auto;
   width: 100%;
   height: auto;
-
  background-color: rgba(0,0,0,0.05);
 }
 section:focus {
@@ -595,7 +594,7 @@ footer .copy {
 		background-attachment: fixed;
 	}
 }
-@media screen and (min-width: 1025px) and (max-width: 1366px){
+@media screen and (min-width: 1025px) and (max-width: 4000px){
 	.container-services{
 		height: 884px;
 	}

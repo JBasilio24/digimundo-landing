@@ -1,0 +1,234 @@
+/*General styles*/
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+  position: relative;
+  background-image: url("../images/at.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.titulo{
+  color: #fff;
+}
+.container-fluid{
+  position: absolute;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*Navigation bar styles*/
+/*Logo styles*/
+#navbar-main {
+  background-color: rgba(0,0,0,0.4);
+  position:fixed;
+  width: 100%;
+  z-index: 3;
+}
+#navbar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  border-bottom: 2px solid gray;
+}
+#logo-nav {
+  width: 150px;
+  height: auto;
+}
+.nav-content {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+div.nav-content a{
+  font-size: 15px;
+	text-decoration: none;
+	color: #c1c1c1;
+	margin-right: 10px;
+	padding: 5px;
+}
+/*Dropdown Button*/
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #186681;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,.5);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover
+.dropdown-content a:hover {background-color: #f1f1f1}*/
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+  position: absolute;
+  right: 0;
+}
+div.nav-content a:hover{
+	/*background-color: rgba(241, 159, 48, 0.4);*/
+	/*color:rgba(241, 159, 48,0.8);*/
+	border-bottom: 2px solid #3085F1;
+}
+/*parpadear cotiza*/
+#cotiza{
+  /*box-shadow: inset 0 0 0 4px #555953;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  font-family: sans-serif;
+  background-color: #186681;
+  font-size: 18px;
+  animation-name: parpadeo;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo{
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+@-webkit-keyframes parpadeo {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+@keyframes parpadeo {
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+.contenido{
+  padding-top: 3em;
+}
+.serv img{
+  width: 80%;
+  height: 80%;
+}
+#principal{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #f19f30;
+}
+.parrafo{
+  color: #ffffff;
+}
+/*footer*/
+footer {
+ width: 100%;
+  background-color: rgba(42,66,89,.95);
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+footer .footer {
+
+  display: flex;
+  margin-bottom: 0px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 60px;
+}
+footer .copy {
+  min-width: 300px;
+  font-size: 20px;
+}
+.socialMenu li {
+  list-style: none;
+  display: inline-block;
+}
+.socialMenu li a {
+  list-style: none;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 10px;
+  font-size: 25px;
+}
+/*Media querys for devices*/
+@media screen and (min-width: 768px){
+  /*Navbar styles*/
+  #navbar-container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 25px;
+  }
+  .nav-content {
+    padding-right: 0;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: none;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #FFF;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+	#titulo{
+		padding-top: 1em;
+		margin:0 auto;
+	  font-family: sans-serif;
+	  font-size: 30px;
+	  color: #fff;
+	}
+  footer .footer {
+  text-align: left;
+  }
+}

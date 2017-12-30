@@ -1,3 +1,4 @@
+$ = jQuery.noConflict();
 //Show and Hide our services
 $(document).ready(function(){
 		$("#mostrar").on( "click", function() {
