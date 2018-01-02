@@ -5,11 +5,13 @@
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <link rel="stylesheet" href="statics/css/at.css">
+    <!--tipography -->
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Dancing+Script" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container-fluid">
+
     <header>
       <div id="navbar-main">
         <div id="navbar-container">
@@ -17,43 +19,40 @@
           <div class="nav-content">
             <button onclick="showMenu()" class="dropbtn icon-container fa fa-bars"></button>
             <div id="myDropdown" class="dropdown-content">
-              <a href="">INICIO</a>
+              <a href="index.html">INICIO</a>
               <a href="nosotros.html">NOSOTROS</a>
               <a href="asesoria.html">ASESORÍA TECNOLÓGICA</a>
               <!-- <a href="#team">EQUIPO</a> -->
-              <a href="#contact" id="cotiza">¡COTIZA YA!</a>
+              <a href="cotiza.html" id="cotiza">¡COTIZA YA!</a>
             </div>
             </div>
         </div>
       </div>
     </header>
+      <div class="container-fluid">
     <div class="contenido">
       <div class="d-flex titulo justify-content-center">
-        <h2 id="principal" class="display-4 mt-5">Asesoria Tecnológica</h2>
+        <h2 id="principal" class="display-4 mt-5">Asesoría Tecnológica</h2>
+      </div>
+      <div class="row final">
+        <div class="col-md-12 frase">
+          <p class="parrafo mt-2 text-center font-italic" id="frase">"De forma general y para un amplio número de fenómenos, aproximadamente el 80% de las consecuencias proviene del 20% de las causas."</p>
+        </div>
       </div>
       <div class="row info text-justify">
         <div class="col-md-6 serv col-sm-12 mt-5">
-          <ul>
+          <ul><br>
               <li><p class="parrafo mt-3">Analizamos sus procesos para brindarle un reporte potencial de sus capacidades productivas y
-                diagnosticar áreas de oportunidad en su cadena de valor.</p><br></li>
+                diagnosticar áreas de oportunidad en su cadena de valor.</p></li>
               <li><p class="parrafo mt-3"><b>OPTIMIZAR</b> resultados se torna imposible sin la medición y estructura de <b>DATOS CLAVE.</b></p></li>
               <li><p class="parrafo mt-3">CREAMOS SOLUCIONES de medición y control de indicadores que faciliten la TOMA DE DECISIONES, permitiendo a su empresa
               tener una RESPUESTA más rápida frente a los comportamientos y al ambiente de su mercado.</p></li>
           </ul>
         </div>
-        <div class="col-md-6 ser col-sm-12">
+        <div class="col-md-6 col-sm-12">
           <hr>
-          <img src="http://www.bguismo.com/wp-content/uploads/2012/12/Explicando-objetivos.jpg" class="img-responsive" alt="">
+          <img src="https://c1.sfdcstatic.com/content/dam/blogs/us/thumbnails/how-my-company-drives-sales-by-focusing-on-customer-education/shutterstock_125338145.jpg" class="img-fluid img-thumbnail" alt="">
         </div>
-      </div>
-      <div class="row final">
-        <div class="col-md-4">
-            <img class="text-center" src="statcs/images/frase.jpg" alt="">
-        </div>
-        <div class="col-md-8 frase">
-          <p class="parrafo mt-5" id="frase">"de forma general y para un amplio número de fenómenos, aproximadamente el 80% de las consecuencias proviene del 20% de las causas."</p>
-        </div>
-
       </div>
     </div>
     <footer>
@@ -66,11 +65,10 @@
           </ul>
         </div>
       </footer>
-
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </div>
+  </div>  
   </body>
 </html>

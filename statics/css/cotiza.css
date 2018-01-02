@@ -7,13 +7,23 @@ html{
 }
 body{
   position: relative;
-  background-image: url("https://agendumsolutions.com/wp-content/uploads/2015/10/slider3.jpg");
+  /*background-image: url("http://fotorecurso.com/images/2016/04/29/fondo-azul-exagonos-fotorecurso.jpg");*/
+  background-image: url("https://previews.123rf.com/images/apostrophe/apostrophe1208/apostrophe120800049/14793037-resumen-de-antecedentes-azul-con-rayas-disposici%C3%B3n-de-dise%C3%B1o-de-%C3%A9poca-grunge-textura-de-fondo-en-dificultade-Foto-de-archivo.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+.boton{
+  cursor: pointer;
+}
+.boton:hover{
+  transform: scale(0.95);
+}
 .titulo{
   color: #fff;
+}
+#head{
+  color: #f19f30;
 }
 .container-fluid{
   position: absolute;
@@ -21,12 +31,12 @@ body{
   margin: 0 auto;
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 /*Navigation bar styles*/
 /*Logo styles*/
 #navbar-main {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.3);
   position:fixed;
   width: 100%;
   z-index: 3;
@@ -140,8 +150,11 @@ div.nav-content a:hover{
    50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
-.inicio{
+.contenido{
   padding-top: 3em;
+}
+.container .formulario{
+  width: 80%
 }
 .serv img{
   width: 80%;
@@ -152,9 +165,6 @@ div.nav-content a:hover{
   font-weight: bold;
   color: #f19f30;
 }
-/*.us{
-	border-bottom: 1px solid #c1c1c1;
-}*/
 .parrafo{
   color: #ffffff;
 }

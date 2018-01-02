@@ -4,11 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="statics/css/at.css">
+  <link rel="stylesheet" href="statics/css/styleour.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
+
   <header class=""> <!-- Home section -->
    <div id="navbar-main">
      <div id="navbar-container">
@@ -16,28 +17,30 @@
        <div class="nav-content">
          <button onclick="showMenu()" class="dropbtn icon-container fa fa-bars"></button>
          <div id="myDropdown" class="dropdown-content">
-           <a href="">INICIO</a>
+           <a href="index.html">INICIO</a>
            <a href="nosotros.html">NOSOTROS</a>
-           <a href="#asesorias">ASESORÍA TECNOLÓGICA</a>
+           <a href="asesoria.html">ASESORÍA TECNOLÓGICA</a>
            <!-- <a href="#team">EQUIPO</a> -->
-           <a href="#contact" id="cotiza">¡COTIZA YA!</a>
+           <a href="cotiza.html" id="cotiza">¡COTIZA YA!</a>
             </div>
           </div>
         </div>
       </div>
     </header>
-      <div class="inicio">
-        <div class="row us align-content-center">
-          <h2 class="titulo">Nosotros</h2>
-          <div class="row d-flex justify-align-center">
-            <div class="col-6 nosotros">
-              <h2 class= "titulo">Misión</h2>
-              <p class="parrafo">Evolucionar empresas e instituciones a través de empoderar el mundo Tecnológico
+    <div class="container-fluid">
+      <div class="container inicio">
+        <div class="d-flex justify-content-center">
+          <h2 class="titulo display-4 mt-5">Nosotros</h2>
+        </div>
+          <div class="row us">
+            <div class="col-md-6 nosotros">
+              <h2 class= "titulo mt-4">Misión</h2>
+              <p class="parrafo mt-3 ">Evolucionar empresas e instituciones a través de empoderar el mundo Tecnológico
                 Dígital (Software, Hardware, Telecom) en sus procesos y sistemas.</p>
               </div>
-              <div class="col-6 nosotros">
-                <h2 class="titulo">Visión</h2>
-                <p class="parrafo">Fungir como proveedores y asesores tecnológicos de las principales
+              <div class="col-md-6 nosotros">
+                <h2 class="titulo mt-4">Visión</h2>
+                <p class="parrafo mt-3">Fungir como proveedores y asesores tecnológicos de las principales
             instituciones y empresas Mexicanas en CDMX</p>
           </div>
         </div>
@@ -45,20 +48,21 @@
     <!-- <div class="separator sep-services">
          <img src="statics/images/head-logo.png" alt="Services separator">
        </div> -->
-    <div class="ubicacion">
-      <h2 class="titulo align-self-center">ubicación</h2>
-      <div class="row-fluid grid">
-        <div class="col-md-4">
-          <img id="logo-nav" src="statics/images/logo.png" alt="Digimundo LOGO">
+    <div class="ubicacion mt-3">
+      <hr>
+      <h2 class="titulo text-center text-uppercase">ubicación</h2>
+      <div class="row grid">
+        <div class="col-md-3">
+          <img  class="rounded mx-auto d-block" id="logo-nav" src="statics/images/logo.png" alt="Digimundo LOGO">
         </div>
-        <div class="direccion">
+        <div class="col-md-9 direccion">
           <p class="parrafo">8179 Bay Avenue Mountain View, CA 94043</p>
           <p class="parrafo">Teléfono +1-92-456-7890</p>
         </div>
       </div>
-      </div>
+
         <div class="col-md-12 mapa">
-          <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3444465431435!2d-99.23750368592461!3d19.526820286830873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21cd5942b4717%3A0x2b46818b7704a420!2sTesca+Corporation!5e0!3m2!1ses-419!2smx!4v1514513096491" width="1080" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="img-thumbnail img-fluid gmap rounded mx-auto d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3444465431435!2d-99.23750368592461!3d19.526820286830873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21cd5942b4717%3A0x2b46818b7704a420!2sTesca+Corporation!5e0!3m2!1ses-419!2smx!4v1514513096491" width="1080" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
       <div class="col-6 imagen">
@@ -67,7 +71,21 @@
       <div class="col-4 image">
 
       </div>
-    </div>
+      <footer>
+          <div class="footer col-xs-12 mt-5">
+            <p class="copy">© Copyright 2017.</p>
+            <ul class="socialMenu">
+              <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+              <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+
+      <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </div>
   </body>
   </html>

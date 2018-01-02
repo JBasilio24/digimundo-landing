@@ -7,7 +7,7 @@ html{
 }
 body{
   position: relative;
-  background-image: url("../images/at.jpg");
+  background-image: url("https://www.fantasylabs.com/wp-content/uploads/pareto-principle-8020-1024x680.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -15,12 +15,16 @@ body{
 .titulo{
   color: #fff;
 }
+#frase{
+	font-family: 'Dancing Script', cursive;
+	font-size: 23px;
+}
 .container-fluid{
   position: absolute;
-  padding: 0;
-  margin: 0 auto;
+	padding: 0;
+  margin: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 /*Navigation bar styles*/
@@ -147,10 +151,12 @@ div.nav-content a:hover{
   width: 80%;
   height: 80%;
 }
+.serv ul{
+	padding-left: 20px;
+}
 #principal{
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #f19f30;
+	font-family: 'Bellefair', serif;
+  color: #186681;
 }
 .parrafo{
   color: #ffffff;
