@@ -50,7 +50,7 @@ $("#mostrar").click(function(){
 });
 */
 // Change background color for navbar
-$(document).scroll(function(){
+$/*(document).scroll(function(){
   if($(this).scrollTop() > 15) {
     $('#navbar-main').css({'display':"none"});
   } else {
@@ -76,7 +76,32 @@ window.onclick = function(event) {
     }
   }
 }
+//input dinamico
+var nextinput = 0;
+function AgregarCampos(){
+nextinput++;
+campo = '<li id="rut'+nextinput+'">Campo:<input type="text" size="20" id="campo' + nextinput + '"&nbsp; name="campo' + nextinput + '"&nbsp; /></li>';
+$("#campos").append(campo);
+}
 
+//other
+$(document).ready(function(){
+	var max_phone = 3;
+	var phones = $(".list_phones");
+	var add_phone = $(".add_more");
+
+	var p=1;
+	$(add_phone).click(function(e){
+		e.preventDefault();
+		if(p < max_phone){
+			p++;
+			$(phones).append('<div class="list_phones mt-2"><input name="phone" type="tel" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" class="form-control-danger" required><button class="remove_phone btn btn-outline-success btn-sm boton_modal less"><i class="fa fa-minus" aria-hidden="true"></i></a></div>')
+		}
+	});
+	$(phones).on("click",".remove_phone", function(e){
+		e.preventDefault(); $(this).parent('div').remove(); p--;
+	})
+});
 
 /*
 $(function () {

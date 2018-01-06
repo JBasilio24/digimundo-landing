@@ -15,6 +15,28 @@ body{
 .titulo{
   color: #fff;
 }
+/*Modal for "Cotiza YA"*/
+#body-cotiza{
+	color: #fff;
+	background-color: #081b27bd;
+}
+#cotizamodal{
+	margin: 0 auto;
+	justify-content: center;
+	align-self: center;
+}
+/*remove phones*/
+.less{
+		margin-left: 5px;
+}
+/*botones*/
+.boton_modal{
+  cursor: pointer;
+}
+.boton_modal:hover{
+  transform: scale(0.95);
+}
+/*container-page*/
 .container-fluid{
   position: absolute;
   padding: 0;
@@ -41,9 +63,13 @@ body{
   position: relative;
   border-bottom: 2px solid gray;
 }
-#logo-nav {
+#logo-nav{
   width: 150px;
   height: auto;
+}
+#logo{
+	padding-bottom: 10px;
+	  width: 150px;
 }
 .nav-content {
   position: absolute;
@@ -158,6 +184,10 @@ div.nav-content a:hover{
 .parrafo{
   color: #ffffff;
 }
+#contacto{
+	width: 75%;
+	margin: 0;
+}
 /*footer*/
 footer {
  width: 100%;
@@ -200,12 +230,20 @@ footer .copy {
     border-bottom: 1px solid #FFF;
     padding-bottom: 25px;
   }
+	#body-cotiza{
+		color: #fff;
+		background-color: rgba(18,5,0,0.8);
+	}
+	#cotizamodal{
+		margin: 0 auto;
+		justify-content: center;
+		align-self: center;
+	}
   .nav-content {
     padding-right: 0;
   }
-
   .dropbtn {
-    display: none;
+    display:none;
   }
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
@@ -223,7 +261,6 @@ footer .copy {
     display: inline-block;
     font-size: 14px;
   }
-
 	#titulo{
 		padding-top: 1em;
 		margin:0 auto;
@@ -234,4 +271,24 @@ footer .copy {
   footer .footer {
   text-align: left;
   }
+}
+/*images*/
+.movil, .mail{
+	height: 35px;
+	width: 35px;
+}
+.map{
+	width: 60px;
+	height: 44px;
+}
+/*ipad */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	#navbar-container {
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		border-bottom: 1px solid #FFF;
+		padding-bottom: 25px;
+	}
+
 }

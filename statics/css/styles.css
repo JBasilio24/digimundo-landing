@@ -9,11 +9,32 @@ body {
 	margin: 0 auto;
 	height: auto;
 	position: relative;
-	background-image: url('../images/image1.gif');
+	background-image: url('../images/matrix.gif');
 	/*background-image:url('../images/principal.jpg');*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+}
+/*Modal for "Cotiza YA"*/
+#body-cotiza{
+	color: #fff;
+	background-color: #081b27bd;
+}
+#cotizamodal{
+	margin: 0 auto;
+	justify-content: center;
+	align-self: center;
+}
+/*remove phones*/
+.less{
+		margin-left: 5px;
+}
+/*botones*/
+.boton_modal{
+  cursor: pointer;
+}
+.boton_modal:hover{
+  transform: scale(0.95);
 }
 div.container-fluid{
   position: absolute;
@@ -116,7 +137,7 @@ div.nav-content a:hover{
 	border-bottom: 2px solid #3085F1;
 }
 /*parpadear cotiza*/
-#cotiza{
+#cotiza, #cotiza_modal{
   /*box-shadow: inset 0 0 0 4px #555953;*/
   padding-left: 15px;
   padding-right: 15px;
@@ -148,6 +169,12 @@ div.nav-content a:hover{
   0% { opacity: 1.0; }
    50% { opacity: 0.0; }
   100% { opacity: 1.0; }
+}
+#cotiza_modal{
+	background-color: rgba(200, 30, 30, 0.5);
+}
+#cotiza:hover, #cotiza_modal:hover{
+	text-decoration: none;
 }
 
 .inicio{
@@ -489,15 +516,14 @@ footer .copy {
 }
 /*Media querys for devices*/
 @media screen and (min-width: 768px){
-  /*Navbar styles*/
-  #navbar-container {
-    width: 80%;
-    max-width: 1400px;
-    margin: 0 auto;
-    border-bottom: 1px solid #FFF;
-    padding-bottom: 25px;
-  }
-
+	/*Navbar styles*/
+	#navbar-container {
+		width: 80%;
+		max-width: 1400px;
+		margin: 0 auto;
+		border-bottom: 1px solid #FFF;
+		padding-bottom: 25px;
+	}
 	body {
 		margin: 0 auto;
 	  height: auto;
@@ -563,7 +589,30 @@ footer .copy {
   text-align: left;
 }
 }
-@media screen and (max-width: 1025px) and (min-width: 768px){
+/*ipad pro*/
+@media screen and (max-width: 1024px) and (min-width: 768px){
+	/*Navbar styles*/
+	.dropdown-content {
+	display: inline-block;
+	position: relative;
+	background-color: transparent;
+	min-width: 160px;
+	box-shadow: none;
+}
+.dropdown-content a {
+	color: #FFF;
+	padding: 12px 10px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+	#navbar-container {
+		width: 80%;
+		max-width: 1400px;
+		margin: 0 auto;
+		border-bottom: 1px solid #FFF;
+		padding-bottom: 25px;
+	}
 	.container-services{
 		height: 1240px;
 	}
@@ -587,31 +636,41 @@ footer .copy {
 		margin: 0 auto;
 		height: auto;
 		position: relative;
-		background-image: url('../images/image1.gif');
+		background-image: url('../images/matrix.gif');
 		/*background-image:url('../images/principal.jpg');*/
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
 }
-@media screen and (min-width: 1025px) and (max-width: 4000px){
+/*laptops*/
+
+/*ipad */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	#navbar-container {
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		border-bottom: 1px solid #FFF;
+		padding-bottom: 25px;
+	}
+	.container-services{
+		height: 884px;
+	}
+}
+@media screen and (min-width: 1251px) and (max-width: 3900px){
 	.container-services{
 		height: 884px;
 	}
 	#titulo{
-		padding-top: 2em;
+	padding-top: 3.5em;
 	}
-	.services{
-		padding: 10px;
-	}
-	.grid{
-		margin-top: 2em;
-		padding-top: 0px;
-	}
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
+	div.container-fluid{
+	  position: absolute;
+	  padding: 0;
+	  margin: 0 auto;
+	  width: 100%;
+	  height: auto;
+ 		background-color: rgba(0,0,0,0.3);
 	}
 }
