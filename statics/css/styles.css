@@ -29,6 +29,9 @@ body {
 .less{
 		margin-left: 5px;
 }
+#hour{
+	width: 20%;
+}
 /*botones*/
 .boton_modal{
   cursor: pointer;
@@ -36,13 +39,13 @@ body {
 .boton_modal:hover{
   transform: scale(0.95);
 }
-div.container-fluid{
+div.digimundo{
   position: absolute;
   padding: 0;
   margin: 0 auto;
   width: 100%;
   height: auto;
- background-color: rgba(0,0,0,0.05);
+ background-color: rgba(0,0,0,0.55);
 }
 section:focus {
   outline: none;
@@ -177,10 +180,9 @@ div.nav-content a:hover{
 	text-decoration: none;
 }
 
-.inicio{
+.inicio, .inicio_asesoria, .inicio_nosotros{
 	margin-top: 80px;
 	margin-bottom:0px;
-	height: auto;
 }
 div.hero{
   position: absolute;
@@ -191,9 +193,6 @@ div.hero{
 	width: 50%;
 	height: 30%;
 	margin: auto;
-}
-.hero img.logo{
-	float: center;
 }
 .desplegable{
 	margin: 0 auto;
@@ -212,21 +211,11 @@ button{
 	text-decoration: none;
 	cursor: pointer;
 }
-.boton > a{
-  min-width: 80px;
-  line-height: 26px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-decoration: none;
-  transition: all .2s ease-in-out;
-}
 .boton:hover{
-  color: #000;
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+	color: #fff;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
   text-decoration: none;
   box-shadow: 1px 2px #ffffff;
 }
@@ -252,7 +241,7 @@ button{
 
 .container-services{
 	width: 100%;
-	height: 665px;
+	height: 400px;
 }
 
 div.nuestros-servicios{
@@ -358,15 +347,19 @@ div.nuestros-servicios{
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
+
 }
 .grid figure h2 {
+	font-family: 'Bellefair', serif;
+
 	position: center center;
   word-spacing: -0.15em;
   font-weight: normal;
-  color: #A2581B;
-  font-size: 15px;
+  color: #ffff;
+  font-size: 20px;
 }
 .grid figure h2 span {
+		background-color: rgba(0,0,0,0.5);
   font-weight: bold;
 }
 .grid figure h2,
@@ -397,7 +390,6 @@ figure.effect-chico figcaption::before {
   right: 30px;
   bottom: 30px;
   left: 30px;
-  border: 1px solid #fff;
   content: '';
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -438,51 +430,107 @@ figure.effect-chico:hover p {
     width: 100%;
   }
 }
-/*Team section*/
-#team .sep-services img {
-  background-color: #f3f4f6;
+.nuestros_clientes{
+	display:block;
+	background-color: rgba(0,0,0,.7);
+	width:100%;
+	height: auto;
 }
-#team {
-  background-color: #f3f4f6;
-  padding-top: 30px;
+.nuestros_clientes h4{
+	color: #ffffff;
+	padding-top: .5em;
 }
-.team-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.ih-item.square.team {
-  width: 320px;
-  min-width: 320px;
-  height: 400px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-.ih-item.square.effect4 a .info,
-.ih-item.square.effect4 a:hover .info {
-  top: unset;
-  bottom: 30%;
-}
-.ih-item.square.effect4 a:hover .info {
-  height: 150px;
-  width: 100%;
-}
-.ih-item.square.effect4.colored .info {
-  background: rgba(13, 67, 105, 0.6);
-}
-.ih-item.square.effect4 .info h3 {
-  font-size: 25px;
-}
-.ih-item.square.effect4 .info p {
-  font-size: 20px;
-  font-weight: bold;
-  color: #FFF;
+.clientes{
+	margin: 0;
+	padding-top: 0em;
+	padding-bottom: 2em;
+	width: 100%;
+	height: 180px;
+
 }
 
+/*Asesoria Template*/
+#frase{
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+.asesoria{
+	position: relative;
+	background-image: url("../images/asesoria.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.serv img{
+  width: 80%;
+  height: 80%;
+}
+.serv ul{
+	padding-left: 20px;
+}
 
+#principal{
+	font-family: 'Lato', sans-serif;
+  color: #186681;
+}
+.parrafo{
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+  color: #ffffff;
+}
+#asesor{
+	width: 100%;
+}
+/*boton whast*/
+#whats{
+	margin-left: 0px;
+	background-color: green;
+	text-decoration: none;
+	border-radius: 8px;
+	color: white;
+	padding-top: 3px;
+	padding-left: 4px;
+	padding-right: 5px;
+}
+#whats:hover{
+	color: white;
+	background-color: green;
+	transform: scale(1.15);
+}
+/*nosotros template*/
+.nosotros_template{
+	position: relative;
+	background-image: url("https://agendumsolutions.com/wp-content/uploads/2015/10/slider3.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.titulo{
+  color: #fff;
+}
+#logo{
+	padding-bottom: 10px;
+	  width: 150px;
+}
+.serv img{
+  width: 80%;
+  height: 80%;
+}
+#contacto{
+	width: 75%;
+	margin: 0;
+}
+/*images*/
+.movil, .mail{
+	height: 35px;
+	width: 35px;
+}
+.map{
+	width: 60px;
+	height: 44px;
+}
 
+/*footer*/
 footer {
  width: 100%;
   background-color: rgba(42,66,89,.95);
@@ -524,6 +572,9 @@ footer .copy {
 		border-bottom: 1px solid #FFF;
 		padding-bottom: 25px;
 	}
+	#hour{
+		width: auto;
+	}
 	body {
 		margin: 0 auto;
 	  height: auto;
@@ -533,7 +584,7 @@ footer .copy {
 		background-size: cover;
 	  background-attachment: fixed;
 	}
-	div.container{
+	div.digimundo{
 	  position: absolute;
 	  padding: 0;
 	  margin: 0 auto;
@@ -570,7 +621,7 @@ footer .copy {
 	  height: 515px;
 	}
 	.grid {
-	  width: 80%;
+	  width: 100%;
 	  clear: both;
 	  margin: 0 auto;
 	  padding: 2em 0 2em;
@@ -582,14 +633,17 @@ footer .copy {
 		padding-top: 1em;
 		margin:0 auto;
 	  font-family: sans-serif;
-	  font-size: 30px;
-	  color: #fff;
+	  font-size: 40px;
+	  color: #ffffff;
 	}
   footer .footer {
   text-align: left;
 }
+#asesor{
+	width: 80%;
 }
-/*ipad pro*/
+}
+/*ipad pro vertical*/
 @media screen and (max-width: 1024px) and (min-width: 768px){
 	/*Navbar styles*/
 	.dropdown-content {
@@ -614,10 +668,10 @@ footer .copy {
 		padding-bottom: 25px;
 	}
 	.container-services{
-		height: 1240px;
+		height: 969px;
 	}
 	#titulo{
-		padding-top: 5em;
+		padding-top: 3.1em;
 	}
 	.services{
 		padding: 10px;
@@ -642,6 +696,9 @@ footer .copy {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
+	#asesor{
+		margin-top: 3.2em;
+	}
 }
 /*laptops*/
 
@@ -655,17 +712,28 @@ footer .copy {
 		padding-bottom: 25px;
 	}
 	.container-services{
-		height: 884px;
+		height: 627px;
+	}
+	#titulo{
+		padding-top: 2em;
+	}
+	.inicio_asesoria{
+		height: 790px;
+	}
+	#asesor{
+		margin-top: 6em;
+		width: 100%;
 	}
 }
 @media screen and (min-width: 1251px) and (max-width: 3900px){
 	.container-services{
-		height: 884px;
+		height: 634px;
+		padding-bottom: 1.6em;
 	}
 	#titulo{
-	padding-top: 3.5em;
+	padding-top: 1.6em;
 	}
-	div.container-fluid{
+	div.digimundo{
 	  position: absolute;
 	  padding: 0;
 	  margin: 0 auto;
