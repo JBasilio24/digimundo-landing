@@ -38,18 +38,18 @@
     <div class="modal fade" id="cotizaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content" id="body-cotiza">
-          <div class="modal-header">
-            <img class="rounded mx-auto d-block img-fluid" id="logo" src="statics/images/logo.png" alt="Digimundo LOGO">
-            <button type="button" class="close boton_modal" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="modal-header" id="modal_header">
+            <img class="rounded mx-auto d-block img-fluid mt-2" id="log" src="statics/images/logo.png" alt="Digimundo LOGO">
+              <button type="button" class="btn btn-danger sticky-top align-baseline close boton_modal" id="close_modal" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
             <div class="title d-flex justify-content-center">
               <h2 class="modal-title" id="cotizamodal">¡Cotiza ya!</h2>
             </div>
             <div class="inicio_form">
-              <p class="parrafo">Los campos marcados con *  son obligatorios.</p>
+              <p class="parrafo_asesor">Los campos marcados con *  son obligatorios.</p>
             </div>
 
             <form action="envio.php" class="" id="datos_cliente" method="post">
@@ -57,7 +57,7 @@
 
               <div class="form-group justify-content-center">
                 <label for="contact" class="form-control-label"><i class="fa fa-user-o" aria-hidden="true"></i> Contacto *</label>
-                <input type="text" class="form-control" name="Contacto" id="contact" placeholder="Contacto" required>
+                <input type="text" class="form-control" name="nombre" id="contact" placeholder="Contacto" required>
               </div>
 
           <div class="form-group">
@@ -69,14 +69,17 @@
             <label for="company" class="form-control-label"><i class="fa fa-building-o" aria-hidden="true"></i> Empresa *</label>
             <input type="text" class="form-control" name="Empresa" id="company" required>
           </div>
-
           <div class="form-group">
             <label for="phone" class="form-control-label"><i class="fa fa-phone-square" aria-hidden="true"></i> Teléfonos *</label>
             <div class="list_phones">
-              <input type="tel" pattern="" name="Telefono" class="form-control-danger" id="phone" required/>
+              <input type="tel" name="Telefono" class="form-control-danger" id="phone"/>
+              <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
               <small id="emailHelp" class="form-text text-muted">Puede escribir hasta tres contactos telefónicos.</small>
             </div>
-            <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger mt-2 boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          </div>
+          <div class="form-group">
+            <label for="correo" class="form-control-label"><i class="fa fa-envelope-o" aria-hidden="true"></i> Correo *</label>
+            <input type="email" name="Email" class="form-control-danger" id="mail"/>
           </div>
 
           <div class="form-group">
@@ -183,27 +186,43 @@
     </div>
     <div class="container-fluid inicio_nosotros">
       <div class="d-flex justify-content-center">
-        <h2 class="titulo display-4 mt-5">Nosotros</h2>
+        <h1 class="titulo display-4 mt-2">Nosotros</h1>
+      </div>
+      <div class="we_are text-left">
+        <h2 class="titulo mt-3 text-left">¿Quienes somos?</h2>
+        <p class="parrafo text-justify">Somos una empresa innovadora de tecnologías de la información.
+          Contamos con un equipo ampliamente experimentado para ofrecerle una solución en tecnología personalizada de acuerdo a los requerimientos de su empresa.
+          Contamos con servicios como: </p>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="parrafo">
+                <li class="list">Software personalizado</li>
+                <li class="list">Internet de las cosas</li>
+                <li class="list">Telecom &amp; wiring </li>
+                <li class="list">Seguridad inteligente</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <!-- <img id="we" class="img-fluid " src="statics/images/we_are.jpg" alt=""> -->
+            </div>
+          </div>
       </div>
         <div class="row us text-justify">
           <div class="col-md-6 nosotros">
-            <h2 class= "titulo mt-4">Misión</h2>
+            <h2 class= "text-left titulo mt-2">Misión</h2>
             <p class="parrafo mt-3 ">Evolucionar empresas e instituciones a través de empoderar el mundo Tecnológico
               Dígital (Software, Hardware, Telecom) en sus procesos y sistemas.</p>
             </div>
             <div class="col-md-6 nosotros">
-              <h2 class="titulo mt-4">Visión</h2>
+              <h2 class="text-left titulo mt-2">Visión</h2>
               <p class="parrafo mt-3">Fungir como proveedores y asesores tecnológicos de las principales
           instituciones y empresas Mexicanas en CDMX</p>
         </div>
       </div>
-  <!-- <div class="separator sep-services">
-       <img src="statics/images/head-logo.png" alt="Services separator">
-     </div> -->
-  <div class="ubicacion mt-3">
+  <div class="ubicacion mt-2">
     <hr>
-    <h2 class="titulo text-center text-uppercase">ubicación</h2>
-    <div class="row grid">
+    <h3 class="titulo text-center text-uppercase">ubicación</h3>
+    <div class="row">
       <div class="col-md-3 justify-content-center">
         <img class="rounded mx-auto d-block" id="logo" src="statics/images/logo.png" alt="Digimundo LOGO">
       </div>
@@ -212,14 +231,17 @@
       </div>
     </div>
       <div class="col-md-12 mapa">
-        <iframe class="img-thumbnail img-fluid rounded mx-auto d-block" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3444465431435!2d-99.23750368592461!3d19.526820286830873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21cd5942b4717%3A0x2b46818b7704a420!2sTesca+Corporation!5e0!3m2!1ses-419!2smx!4v1514513096491" width="1080" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="img-thumbnail img-fluid rounded mx-auto d-block" id="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.3444465431435!2d-99.23750368592461!3d19.526820286830873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21cd5942b4717%3A0x2b46818b7704a420!2sTesca+Corporation!5e0!3m2!1ses-419!2smx!4v1514513096491" width="1080" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <div class="row mt-3">
-        <div class="col-md-6 text-md-right">
-            <p class="parrafo"><img class="movil img-fluid"src="statics/images/movil.png" alt="Contact images"> 53985419/53985480 11063976 Ext. 114</p>
-        </div>
-        <div class="col-md-6">
+      <div class="container contacto">
+        <h3 class="titulo mt-2 text-left">Contacto</h3>
+        <div class="row mt-3">
+          <div class="col-md-6 text-md-right">
+            <p class="parrafo"><img class="movil img-fluid"src="statics/images/movil.png" alt="Contact images"> 53985419 / 53985480 <br> 11063976 Ext. 114</p>
+          </div>
+          <div class="col-md-6">
             <p class="parrafo"><img class="movil img-fluid"src="statics/images/mail.png" alt="Contact images"> digimundo@tescacorporation.com</p>
+          </div>
         </div>
       </div>
   </div>

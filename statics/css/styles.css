@@ -25,12 +25,36 @@ body {
 	justify-content: center;
 	align-self: center;
 }
+.close{
+	position:relative;
+}
+#close_modal{
+	background-color: #fff;
+	margin-bottom:100px;
+	display: block;
+	float: right;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	border-radius: 10px;
+}
+#close_modal > span{
+	color:#000;
+}
+#modal_header{
+	padding-top: 0px;
+	padding-bottom: 5px;
+}
+.form-group{
+	margin-bottom: 5px;
+}
 /*remove phones*/
 .less{
 		margin-left: 5px;
 }
 #hour{
-	width: 20%;
+	width: 25%;
 }
 /*botones*/
 .boton_modal{
@@ -39,6 +63,10 @@ body {
 .boton_modal:hover{
   transform: scale(0.95);
 }
+.add_more{
+	padding-top: -15px;
+}
+
 div.digimundo{
   position: absolute;
   padding: 0;
@@ -64,7 +92,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   z-index: 3;
 }
-#navbar-container {
+#navbar-container{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -241,7 +269,7 @@ button{
 
 .container-services{
 	width: 100%;
-	height: 400px;
+	height: 450px;
 }
 
 div.nuestros-servicios{
@@ -440,23 +468,81 @@ figure.effect-chico:hover p {
 	color: #ffffff;
 	padding-top: .5em;
 }
+h4.parrafo{
+	margin-bottom: 0px;
+}
 .clientes{
 	margin: 0;
 	padding-top: 0em;
 	padding-bottom: 2em;
 	width: 100%;
-	height: 180px;
+	height: 200px;
 
 }
+.cont-princ-slider {
+	height: 135px;
+	overflow: hidden;
+	width: 100%;
+	background: rgba(0,0,0,.25);
+}
 
+.slier-prin {
+	display: inline-flex;
+	-moz-animation: slider 20s infinite linear;
+	-webkit-animation: slider 20s infinite linear;
+	animation: slider 20s infinite linear;
+	height: 100%;
+	width: auto;
+}
+.our_customer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;
+	font-family: Arial;
+	font-size: 16px;
+	height: 100%;
+	flex: 0 0 auto;
+	text-align: center;
+	width: 150px;
+}
+.logo_cliente{
+	cursor: pointer;
+	width: 50%;
+}
+.our_customer:hover {
+	transform: translateX(0%);
+}
+@keyframes slider {
+	to {
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+}
+#si, #keff{
+	padding-top: 0px;
+	width: 100px;
+}
+.our_customer p{
+	margin-bottom: 0px;
+}
+#dabba{
+	margin-top: 5px;
+	padding-top:0;
+	width: 120px;
+}
+
+#cristobal{
+	width: auto;
+}
 /*Asesoria Template*/
 #frase{
 	font-family: 'Dancing Script', cursive;
-	font-size: 30px;
+	font-size: 20px;
 }
 .asesoria{
 	position: relative;
-	background-image: url("../images/asesoria.jpeg");
+	background-image: url("../images/asesor_movil.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -468,12 +554,11 @@ figure.effect-chico:hover p {
 .serv ul{
 	padding-left: 20px;
 }
-
 #principal{
 	font-family: 'Lato', sans-serif;
   color: #186681;
 }
-.parrafo{
+.parrafo, .parrafo_asesor{
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
   color: #ffffff;
@@ -482,11 +567,17 @@ figure.effect-chico:hover p {
 	width: 100%;
 }
 /*boton whast*/
+.whatsapp{
+	position: fixed;
+	right:0px;
+}
 #whats{
+	index
+	cursor: pointer;
 	margin-left: 0px;
 	background-color: green;
 	text-decoration: none;
-	border-radius: 8px;
+	border-radius: 100px;
 	color: white;
 	padding-top: 3px;
 	padding-left: 4px;
@@ -500,7 +591,7 @@ figure.effect-chico:hover p {
 /*nosotros template*/
 .nosotros_template{
 	position: relative;
-	background-image: url("https://agendumsolutions.com/wp-content/uploads/2015/10/slider3.jpg");
+	background-image: url("../images/principal.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -509,8 +600,7 @@ figure.effect-chico:hover p {
   color: #fff;
 }
 #logo{
-	padding-bottom: 10px;
-	  width: 150px;
+	 width: 150px;
 }
 .serv img{
   width: 80%;
@@ -575,6 +665,13 @@ footer .copy {
 	#hour{
 		width: auto;
 	}
+	.asesoria{
+		position: relative;
+		background-image: url("../images/asesoria.jpeg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
 	body {
 		margin: 0 auto;
 	  height: auto;
@@ -629,6 +726,38 @@ footer .copy {
 	  flex-wrap: wrap;
 	  justify-content: center;
 	}
+	.cont-princ-slider {
+		height: 145px;
+		overflow: hidden;
+		width: 100%;
+	}
+	.our_customer{
+		padding-top: 15px;
+		background: rgba(0,0,0,.15);
+		height: 100%;
+		text-align: center;
+		width: 175px;
+	}
+	#dabba{
+		margin-top: 5px;
+		padding-top:0;
+		width: 120px;
+	}
+	.logo_cliente{
+		width: 100px;
+		height: auto;
+		cursor: pointer;
+	}
+	#cristobal{
+		width: auto;
+	}
+	.parrafo{
+		margin-left: 5rem;
+		margin-right: 5rem;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+	  color: #ffffff;
+	}
 	#titulo{
 		padding-top: 1em;
 		margin:0 auto;
@@ -636,11 +765,31 @@ footer .copy {
 	  font-size: 40px;
 	  color: #ffffff;
 	}
+	.whatsapp{
+		position: fixed;
+		right:0px;
+	}
+	/*Nosotros template*/
+	.nosotros_template{
+		position: relative;
+		background-image: url("https://agendumsolutions.com/wp-content/uploads/2015/10/slider3.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	#we{
+		width: 50%;
+	}
   footer .footer {
   text-align: left;
 }
+
 #asesor{
 	width: 80%;
+}
+#frase{
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
 }
 }
 /*ipad pro vertical*/
@@ -673,6 +822,9 @@ footer .copy {
 	#titulo{
 		padding-top: 3.1em;
 	}
+	.inicio_nosotros h2{
+		margin-left: 2.8em;
+	}
 	.services{
 		padding: 10px;
 	}
@@ -699,8 +851,18 @@ footer .copy {
 	#asesor{
 		margin-top: 3.2em;
 	}
+	/*nosotros_template*/
+	#gmap{
+		height: 325px;
+	}
 }
 /*laptops*/
+@media screen and (min-width: 1025px) and (max-width: 1299px){
+	.container-services{
+		height: 500px;
+	}
+}
+
 
 /*ipad */
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -717,6 +879,7 @@ footer .copy {
 	#titulo{
 		padding-top: 2em;
 	}
+	/*Asesoria template*/
 	.inicio_asesoria{
 		height: 790px;
 	}
@@ -724,8 +887,22 @@ footer .copy {
 		margin-top: 6em;
 		width: 100%;
 	}
+	.parrafo{
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+	  color: #ffffff;
+	}
+	/*nosotros_template*/
+	#gmap{
+		height: 200px;
+	}
+	.inicio_nosotros h2{
+		margin-left: 1.4em;
+	}
 }
-@media screen and (min-width: 1251px) and (max-width: 3900px){
+@media screen and (min-width: 1300px) and (max-width: 3900px){
 	.container-services{
 		height: 634px;
 		padding-bottom: 1.6em;
@@ -740,5 +917,8 @@ footer .copy {
 	  width: 100%;
 	  height: auto;
  		background-color: rgba(0,0,0,0.3);
+	}
+	.inicio_nosotros h2{
+		margin-left: 2.8em;
 	}
 }

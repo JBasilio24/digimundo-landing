@@ -12,22 +12,11 @@ $(document).ready(function(){
 
 //Change background-image in our services
 /*$(document).ready(function(){
-	$(".effect-chico").mouseover(function(){
 		$('.fondo').fadeIn(2000);
 		$('.imagen').hide();
 	});
 });*/
-/*//change icon
-$("#mostrar").click(function(){
-        $(".fa").removeClass("fa-angle-up");
-        $(this).children("i").addClass("fa-angle-down");
-    });*/
 
-
-//Show logo
-  $(document).ready(function(){
-   $('.logo').hide().fadeIn(3000);
-  });
 /*When the user clicks on the button,
 toggle between hiding and showing the dropdown content*/
 function showMenu() {
@@ -80,7 +69,7 @@ $(document).ready(function(){
 		$('.add_more').show();
 	})
 });
-/*validate form */
+/*validate form
 $(document).ready(function(){
 	$("#datos_cliente").validate({
 		rules:{
@@ -106,18 +95,33 @@ $(document).ready(function(){
 			}
 		}
 	});
-});
-/*change images
-$(document).ready(function(){
-	$('.imagen').hover(function(){
-		$('.imagen').css("display", 'none');
-		$('.fondo').css("display", 'block');
-	}, function(){
-		$('.imagen').css("display", 'block');
-		$('.fondo').css("display", 'none');
-	});
 });*/
+/*Customer banner*/
+var slider = document.querySelector(".slier-prin");
+	slider.innerHTML += slider.innerHTML;
+/*control form*/
+$(document).ready(function(){
+	$("#cotiza_modal").on("click", function(){
+		$("#cotizaya").delay(1000);
+	});
+});
+/**/
+$(document).ready(function(){
+	$(".logo_cliente").hover(function(){
 
+	});
+});
+/*change images*/
+$(document).ready(function(){
+	$('.effect-chico').hover(function(){
+		$(this).remove('.imagen');
+
+	}, function(){
+		$('.imagen').css({"display":'block'});
+		$('.fondo').css({"display":'none'});
+	});
+});
+/**/
 /*send contact
 $(document).ready(function(){
 	$('#datos_cliente').submit(function(){

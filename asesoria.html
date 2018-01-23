@@ -41,18 +41,18 @@
     <div class="modal fade" id="cotizaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content" id="body-cotiza">
-          <div class="modal-header">
-            <img class="rounded mx-auto d-block img-fluid" id="logo" src="statics/images/logo.png" alt="Digimundo LOGO">
-            <button type="button" class="close boton_modal" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="modal-header" id="modal_header">
+            <img class="rounded mx-auto d-block img-fluid mt-2" id="log" src="statics/images/logo.png" alt="Digimundo LOGO">
+              <button type="button" class="btn btn-danger sticky-top align-baseline close boton_modal" id="close_modal" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
           <div class="modal-body">
             <div class="title d-flex justify-content-center">
               <h2 class="modal-title" id="cotizamodal">¡Cotiza ya!</h2>
             </div>
             <div class="inicio_form">
-              <p class="parrafo">Los campos marcados con *  son obligatorios.</p>
+              <p class="parrafo_asesor">Los campos marcados con *  son obligatorios.</p>
             </div>
 
             <form action="envio.php" class="" id="datos_cliente" method="post">
@@ -60,7 +60,7 @@
 
               <div class="form-group justify-content-center">
                 <label for="contact" class="form-control-label"><i class="fa fa-user-o" aria-hidden="true"></i> Contacto *</label>
-                <input type="text" class="form-control" name="Contacto" id="contact" placeholder="Contacto" required>
+                <input type="text" class="form-control" name="nombre" id="contact" placeholder="Contacto" required>
               </div>
 
           <div class="form-group">
@@ -72,14 +72,17 @@
             <label for="company" class="form-control-label"><i class="fa fa-building-o" aria-hidden="true"></i> Empresa *</label>
             <input type="text" class="form-control" name="Empresa" id="company" required>
           </div>
-
           <div class="form-group">
             <label for="phone" class="form-control-label"><i class="fa fa-phone-square" aria-hidden="true"></i> Teléfonos *</label>
             <div class="list_phones">
-              <input type="tel" pattern="" name="Telefono" class="form-control-danger" id="phone" required/>
+              <input type="tel" name="Telefono" class="form-control-danger" id="phone"/>
+              <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
               <small id="emailHelp" class="form-text text-muted">Puede escribir hasta tres contactos telefónicos.</small>
             </div>
-            <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger mt-2 boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          </div>
+          <div class="form-group">
+            <label for="correo" class="form-control-label"><i class="fa fa-envelope-o" aria-hidden="true"></i> Correo *</label>
+            <input type="email" name="Email" class="form-control-danger" id="mail"/>
           </div>
 
           <div class="form-group">
@@ -186,18 +189,21 @@
     </div>
     <div class="inicio_asesoria container-fluid">
       <div class="d-flex titulo justify-content-center">
-        <h2 id="principal" class="display-5 mt-5">Asesoría Tecnológica</h2>
+        <h2 id="principal" class="display-5 mt-md-5">Asesoría Tecnológica</h2>
       </div>
         <div class="container frase float-content-center">
-          <p class="parrafo mt-2 text-center font-italic" id="frase">"El 80% de las consecuencias proviene del 20% de las causas."</p>
+          <p class="parrafo mt-md-2 text-center font-italic" id="frase">"El 80% de las consecuencias proviene del 20% de las causas."</p>
+          <div class="align-self-right whatsapp mt-2">
+            <a href="https://api.whatsapp.com/api/send?phone=525581777395" id="whats_cont" class="rounded-circle"><i id="whats" class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+          </div>
         </div>
       <div class="row info text-justify">
         <div class="col-md-6 serv col-sm-12 mt-md-2 mt-xl-3">
-          <ul class="parrafo"><br>
-              <li><p class="parrafo mt-4">Analizamos sus procesos para brindarle un reporte potencial de sus capacidades productivas y
+          <ul class="parrafo_asesor"><br>
+              <li><p class="parrafo_asesor mt-md-4">Analizamos sus procesos para brindarle un reporte potencial de sus capacidades productivas y
                 diagnosticar áreas de oportunidad en su cadena de valor.</p></li>
-              <li><p class="parrafo mt-3"><b>OPTIMIZAR</b> resultados se torna imposible sin la medición y estructura de <b>DATOS CLAVE.</b></p></li>
-              <li><p class="parrafo mt-3">CREAMOS SOLUCIONES de medición y control de indicadores que faciliten la TOMA DE DECISIONES, permitiendo a su empresa
+              <li><p class="parrafo_asesor mt-3"><b>OPTIMIZAR</b> resultados se torna imposible sin la medición y estructura de <b>DATOS CLAVE.</b></p></li>
+              <li><p class="parrafo_asesor mt-3">CREAMOS SOLUCIONES de medición y control de indicadores que faciliten la TOMA DE DECISIONES, permitiendo a su empresa
               tener una RESPUESTA más rápida frente a los comportamientos y al ambiente de su mercado.</p></li>
           </ul>
         </div>
@@ -207,11 +213,8 @@
         </div>
       </div>
     </div>
-    <div class="whatsapp mt-2">
-      <a href="https://api.whatsapp.com/api/send?phone=525581777395" id="whats_cont" class="rounded-circle"><i id="whats" class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-    </div>
     <footer>
-        <div class="footer col-xs-12 mt-5">
+        <div class="footer col-xs-12 mt-3 ">
           <p class="copy">© Copyright 2017.</p>
           <ul class="socialMenu">
             <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>

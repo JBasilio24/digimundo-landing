@@ -1,44 +1,27 @@
 <?php
-  $Contacto = $_POST['Contacto'];
-  $Puesto = $_POST['Puesto'];
-  $Empresa = $_POST['Empresa'];
-  $Telefono = $_POST['Telefono'];
+  $destino = array('charlixd.cm@gmail.com',
+  'ceo@digimundo.com.mx');
+
+  $contacto = $_POST["nombre"];
+  $puesto = $_POST['Puesto'];
+  $empresa = $_POST['Empresa'];
+  $telefono = $_POST['Telefono'];
+  $Email = $_POST['Email']
   $hora = $_POST['hora'];
   $hora2 = $_POST['hora2'];
   $dias = $_POST['dias'];
-  $servicios = $_POST['serviocios'];
-  $Mensaje = $_POST['Mensaje'];
+  $servicios = $_POST['servicios'];
+  $mensaje = $_POST['Mensaje'];
 
-$contenido = '
-  <html>
-  <head>
-      <title></title>
-  </head>
-  <body>
-        <h2> Se ha recibido un mensaje de Digimundo</h2>
-        <p>Datos del Cliente</p>
-        <p> Nombre de Cliente: '.$Contacto'
-            Puesto: '.$Puesto'  <br>
-      Nombre de la Empresa: '.$Empresa' <br>
-      Teléfonos: '.$Telefono' <br>
-      Horario de : '.$hora' a : '.$hora2' <br>
-      Comunicarse en los días: '.$dias' <br>
-      Se requieren los servicio de: '.$servicios' <br>
-      Descripcion del problema: '.$Mensaje' </p>
-  </body>
-  </html>';
+  $contenido= "Mensaje desde Digimundo"."\nDatos de contacto".
+  "\n Nombre del Contacto".$contacto.
+  "\n Puesto".$puesto.
+  "\n Nombre de la empresa" . $empresa .
+  "\n Telefono".$telefono.
+  "\n Horario de atencion de".$hora."a".$hora2. "los dias".$dias.
+  "\n Se requieren los siguientes servicios".$servicios.
+  "\n Descripcion del problema".$mensaje;
 
-  $header = "From: Pet Guru\r\nReply-To: softwaremanager@digimundo.com".
-          'X-Mailer:PHP/'.phpversion();
-  $headers .= "Content-type: text/html; charset=UTF-8 \r\n";
-
-  $envio = mail('charlixd.cm@gmail.com', $contenido, $headers);
-
-  if($envio){
-    $miresultado = '<h4>Los datos se enviarion correctamente, gracias.Nos pondremos en contacto lo antes posible.</h4>'
-  }
-  else{
-    $miresultado = '<h4>No se enviarion los datos, revise que haya llenado todos los ccampos solicitados</h4>'
-  }
-  echo $miresultado
+  mail($destino,"Cliente", $contenido);
+  header("Location:index.html");
  ?>
