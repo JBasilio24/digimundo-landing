@@ -72,14 +72,14 @@
           <div class="form-group">
             <label for="phone" class="form-control-label"><i class="fa fa-phone-square" aria-hidden="true"></i> Teléfonos *</label>
             <div class="list_phones">
-              <input type="tel" name="Telefono" class="form-control-danger" id="phone"/>
+              <input type="tel" name="phone" class="form-control-danger" id="phone"/>
               <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
               <small id="emailHelp" class="form-text text-muted">Puede escribir hasta tres contactos telefónicos.</small>
             </div>
           </div>
           <div class="form-group">
             <label for="correo" class="form-control-label"><i class="fa fa-envelope-o" aria-hidden="true"></i> Correo *</label>
-            <input type="email" name="Email" class="form-control-danger" id="mail"/>
+            <input type="email" name="mail" class="form-control-danger" id="mail"/>
           </div>
 
           <div class="form-group">
@@ -88,9 +88,9 @@
               <div class="col-md-12">
                 <form class="form-inline form-control">
                   <label class="mr-sm-2" for=""><i class="fa fa-clock-o" aria-hidden="true"></i> Hora</label>
-                  <input type="time" name="hora "id="hour" name="" value="">
+                  <input type="time" name="hora " id="hour" name="" value="">
                   <label for="">-</label>
-                  <input type="time" name="hora2 "id="hour" name="" value="">
+                  <input type="time" name="hora2 " id="hour" name="" value="">
                   <label for=""> hrs</label>
                 </form>
 
@@ -176,7 +176,7 @@
            </div>
            <div class="modal-footer d-flex justify-content-center">
                <button type="button" class="btn btn-outline-danger boton_modal" data-dismiss="modal">Close</button>
-               <button type="submit" class="btn btn-outline-primary boton_modal">Enviar</button>
+               <input type="submit" class="btn btn-outline-primary boton_modal" value="Enviar">
            </div>
          </div>
         </form>
@@ -185,8 +185,8 @@
       </div>
     </div>
     <div class="inicio">
-      <div class="align-self-right whatsapp mt-5">
-        <a href="https://api.whatsapp.com/api/send?phone=525581777395" id="whats_cont" class="rounded-circle"><i id="whats" class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+      <div id="whatsappdiv"class="align-self-right whatsapp mt-5">
+        <a href="https://api.whatsapp.com/send?phone=525576112053" id="whats_cont" class="rounded-circle"><i id="whats" class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
       </div>
         <div class="hero justify-content-center">
            <img class="logo img-fluid rounded mx-auto d-block float-center" alt="Responsive image" src="statics/images/logo.png" alt="Digimundo LOGO">
@@ -393,24 +393,22 @@
             <h4 class="parrafo mt-md-2 text-center">Nuestros clientes</h4>
           </div>
           <div class="cont-princ-slider">
-          <div class="slier-prin">
-            <div class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cliente02.png" alt=""> </div>
-            <div id="si"class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/si.png" alt=""></div>
-            <div class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/unam.png" alt=""> </div>
-            <div class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cliente01.png" alt=""> </div>
-            <div class="our_customer"><img id="cristobal"class="mt-4 img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cristobal.png" alt=""></div>
-            <div class="our_customer"><img id="dabba" class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/Dabba.png" alt=""> </div>
-            <div id="keff"class="our_customer"><img class="mt-md-4 img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cliente_03.png" alt=""> </div>
+          <div id="slide_cliente" class="slier-prin">
+              <div class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cliente02.png" alt=""> </div>
+              <div id="si"class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/si.png" alt=""></div>
+              <div class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/unam.png" alt=""> </div>
+              <div class="our_customer"><img class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cliente01.png" alt=""> </div>
+              <div class="our_customer"><img id="cristobal"class=" mt-md-4 img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cristobal.png" alt=""></div>
+              <div class="our_customer"><img id="dabba" class="img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/Dabba.png" alt=""> </div>
+              <div id="keff"class="our_customer"><img class="mt-md-4 img-fluid rounded mx-auto d-block logo_cliente" src="statics/images/cliente_03.png" alt=""> </div>
           </div>
         </div>
       </div>
-<footer class="mt-5">
+<footer class="mt-2">
     <div class="footer col-12">
-      <p class="copy">© Copyright 2017.</p>
+      <p class="copy">© Copyright 2018.</p>
       <ul class="socialMenu">
-        <li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-        <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a class="parrafo face" href="https://www.facebook.com/digimundotech/"> Siguenos en Facebook <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </footer>
@@ -418,6 +416,7 @@
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script src="statics/js/main.js"></script>
   </body>

@@ -480,13 +480,14 @@ h4.parrafo{
 
 }
 .cont-princ-slider {
+	position: relative;
 	height: 135px;
 	overflow: hidden;
 	width: 100%;
 	background: rgba(0,0,0,.25);
 }
-
 .slier-prin {
+	overflow-y: scroll;
 	display: inline-flex;
 	-moz-animation: slider 20s infinite linear;
 	-webkit-animation: slider 20s infinite linear;
@@ -520,8 +521,11 @@ h4.parrafo{
 	}
 }
 #si, #keff{
-	padding-top: 0px;
-	width: 100px;
+	padding-top: 1.5em;
+	width: 150px;
+}
+#si{
+	padding-top: 0;
 }
 .our_customer p{
 	margin-bottom: 0px;
@@ -533,6 +537,7 @@ h4.parrafo{
 }
 
 #cristobal{
+	padding-top: 1em;
 	width: auto;
 }
 /*Asesoria Template*/
@@ -568,19 +573,23 @@ h4.parrafo{
 }
 /*boton whast*/
 .whatsapp{
-	position: fixed;
+	position: absolute;
 	right:0px;
 }
 #whats{
-	index
+	height: 38.5px;
+	width: 37px;
+	right: 30px; top: 100px;
+	position: fixed;
 	cursor: pointer;
 	margin-left: 0px;
 	background-color: green;
 	text-decoration: none;
 	border-radius: 100px;
 	color: white;
+	padding-bottom: 4px;
 	padding-top: 3px;
-	padding-left: 4px;
+	padding-left: 4.5px;
 	padding-right: 5px;
 }
 #whats:hover{
@@ -628,6 +637,9 @@ footer {
   padding: 0;
   margin: 0;
 }
+.face:hover{
+	color: #1A5276;
+}
 footer .footer {
 
   display: flex;
@@ -650,7 +662,7 @@ footer .copy {
   text-decoration: none;
   color: #FFF;
   padding: 0 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 /*Media querys for devices*/
 @media screen and (min-width: 768px){
@@ -817,7 +829,23 @@ footer .copy {
 		padding-bottom: 25px;
 	}
 	.container-services{
-		height: 969px;
+		height: 960px;
+	}
+	#whats{
+		height: 35px;
+		width: 35px;
+		right: 30px; top: 100px;
+		position: absolute;
+		cursor: pointer;
+		margin-left: 0px;
+		background-color: green;
+		text-decoration: none;
+		border-radius: 100px;
+		color: white;
+		padding-bottom: 4px;
+		padding-top: 3px;
+		padding-left: 4.5px;
+		padding-right: 5px;
 	}
 	#titulo{
 		padding-top: 3.1em;
@@ -848,6 +876,36 @@ footer .copy {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
+	.cont-princ-slider {
+		height: 225px;
+		overflow: hidden;
+		width: 100%;
+	}
+	.our_customer{
+		padding-top: 25px;
+		background: rgba(0,0,0,.15);
+		height: 100%;
+		text-align: center;
+		width: 285px;
+	}
+	#dabba{
+		margin-top: 15px;
+		padding-top:0;
+		width: 180px;
+	}
+	.logo_cliente{
+		width: auto;
+		height: auto;
+		cursor: pointer;
+	}
+	#cristobal{
+		width: auto;
+	}
+	#si, #keff{
+		padding-top: 2.4em;
+		width: 130px;
+	}
+	/*asesoria template*/
 	#asesor{
 		margin-top: 3.2em;
 	}
@@ -904,7 +962,7 @@ footer .copy {
 }
 @media screen and (min-width: 1300px) and (max-width: 3900px){
 	.container-services{
-		height: 634px;
+		height: 695px;
 		padding-bottom: 1.6em;
 	}
 	#titulo{
@@ -920,5 +978,72 @@ footer .copy {
 	}
 	.inicio_nosotros h2{
 		margin-left: 2.8em;
+	}
+}
+/*movil horizontal*/
+@media screen and (min-width: 500px) and (max-width: 767px){
+	.container-services{
+		height: 200px;
+	}
+	div.hero{
+	  position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 50%;
+		height: 65%;
+		margin: auto;
+	}
+	.nuestros_clientes{
+		display: block;
+		margin-top: 2em;
+	}
+	.footer{
+		margin-top: 1em;
+	}
+}
+/*laptos 14-15 " */
+@media (min-width: 1025px) and (max-width: 1332px) {
+  .container-services{
+		height: 400px;
+	}
+	.nuestros_clientes{
+		display: block;
+		margin-top:8.75em;
+	}
+	#si, #keff{
+		padding-top: .05em;
+		width: 150px;
+	}
+	#si{
+		padding-top: 0;
+	}
+	#cristobal{
+		padding-top: .2em;
+		width: auto;
+	}
+	/*Asesoria Template*/
+	.inicio_asesoria{
+		height: 500px;
+	}
+	#asesor{
+		width: 70%;
+	}
+	#whats{
+		height: 35px;
+		width: 35px;
+		right: 30px; top: 100px;
+		position: relative;
+		cursor: pointer;
+		margin-left: 0px;
+		background-color: green;
+		text-decoration: none;
+		border-radius: 100px;
+		color: white;
+		padding-bottom: 4px;
+		padding-top: 3px;
+		padding-left: 4.5px;
+		padding-right: 5px;
 	}
 }

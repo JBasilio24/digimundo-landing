@@ -9,6 +9,41 @@ $(document).ready(function(){
 			$('.container-services').css({'height':"auto"});
 	});
 });
+/*mover botón whatsapp*/
+		var whatsapp = document.getElementById('whats');
+		var mc = new Hammer(whatsapp);
+		mc.add( new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0 }) );
+		mc.on("pan", handleDrag);
+
+		var lastPosX = 0;
+		var lastPosY = 0;
+		var isDragging = false;
+		function handleDrag(ev) {
+
+		  // for convience, let's get a reference to our object
+		  var elem = ev.target;
+
+		  if ( ! isDragging ) {
+		    isDragging = true;
+		    lastPosX = elem.offsetLeft;
+		    lastPosY = elem.offsetTop;
+		  }
+		  // NOTE:
+		  var posX = ev.deltaX + lastPosX;
+		  var posY = ev.deltaY + lastPosY;
+
+		  elem.style.left = posX + "px";
+		  elem.style.top = posY + "px";
+
+		  if (ev.isFinal) {
+		    isDragging = false;
+		  }
+		}
+
+/*mover slide*/
+
+
+
 
 //Change background-image in our services
 /*$(document).ready(function(){
@@ -55,7 +90,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		if(p < max_phone){
 			p++;
-			$(phones).append('<div class="list_phones mt-2"><input name="Telefono" type="tel" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" class="form-control-danger" required><button class="remove_phone btn btn-outline-success btn-sm boton_modal less"><i class="fa fa-minus" aria-hidden="true"></i></a></div>')
+			$(phones).append('<div class="list_phones mt-2"><input name="phone[]" type="tel" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" class="form-control-danger" required><button class="remove_phone btn btn-outline-success btn-sm boton_modal less"><i class="fa fa-minus" aria-hidden="true"></i></a></div>')
 			if(p==3){
 				$('.add_more').hide();
 			}
