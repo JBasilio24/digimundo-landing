@@ -7,6 +7,7 @@ $(document).ready(function(){
       $('.hero').css({'display':"none"});
       $('#mostrar').css({'display':"none"});
 			$('.container-services').css({'height':"auto"});
+			$(".nuestros_clientes").css({'margin-top':".5em"});
 	});
 });
 /*mover botón whatsapp*/
@@ -39,7 +40,16 @@ $(document).ready(function(){
 		    isDragging = false;
 		  }
 		}
-
+/*form days personal*/
+$( function() {
+    $("#inlineFormCustomSelect").change( function() {
+        if ($(this).val() === "4") {
+            $(".personalizado").css({'display':"block"});
+        } else {
+          	$(".personalizado").css({'display':"none"});
+        }
+    });
+});
 /*mover slide*/
 
 

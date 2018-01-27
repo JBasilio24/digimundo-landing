@@ -56,6 +56,10 @@ body {
 #hour{
 	width: 25%;
 }
+/*days personal*/
+.personalizado{
+	display: none;
+}
 /*botones*/
 .boton_modal{
   cursor: pointer;
@@ -577,24 +581,15 @@ h4.parrafo{
 	right:0px;
 }
 #whats{
-	height: 38.5px;
-	width: 37px;
+	height: 45px;
+	width: 45px;
 	right: 30px; top: 100px;
 	position: fixed;
 	cursor: pointer;
 	margin-left: 0px;
-	background-color: green;
 	text-decoration: none;
-	border-radius: 100px;
-	color: white;
-	padding-bottom: 4px;
-	padding-top: 3px;
-	padding-left: 4.5px;
-	padding-right: 5px;
 }
 #whats:hover{
-	color: white;
-	background-color: green;
 	transform: scale(1.15);
 }
 /*nosotros template*/

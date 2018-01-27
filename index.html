@@ -35,159 +35,10 @@
          </div>
        </div>
     </header>
-    <div class="modal fade" id="cotizaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" id="body-cotiza">
-          <div class="modal-header" id="modal_header">
-            <img class="rounded mx-auto d-block img-fluid mt-2" id="log" src="statics/images/logo.png" alt="Digimundo LOGO">
-              <button type="button" class="btn btn-danger sticky-top align-baseline close boton_modal" id="close_modal" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-          <div class="modal-body">
-            <div class="title d-flex justify-content-center">
-              <h2 class="modal-title" id="cotizamodal">¡Cotiza ya!</h2>
-            </div>
-            <div class="inicio_form">
-              <p class="parrafo_asesor">Los campos marcados con *  son obligatorios.</p>
-            </div>
-
-            <form action="envio.php" class="" id="datos_cliente" method="post">
-
-
-              <div class="form-group justify-content-center">
-                <label for="contact" class="form-control-label"><i class="fa fa-user-o" aria-hidden="true"></i> Contacto *</label>
-                <input type="text" class="form-control" name="nombre" id="contact" placeholder="Contacto" required>
-              </div>
-
-          <div class="form-group">
-            <label for="job" class="form-control-label"><i class="fa fa-address-card-o" aria-hidden="true"></i> Puesto</label>
-            <input type="text" class="form-control" name="Puesto" id="job">
-          </div>
-
-          <div class="form-group">
-            <label for="company" class="form-control-label"><i class="fa fa-building-o" aria-hidden="true"></i> Empresa *</label>
-            <input type="text" class="form-control" name="Empresa" id="company" required>
-          </div>
-          <div class="form-group">
-            <label for="phone" class="form-control-label"><i class="fa fa-phone-square" aria-hidden="true"></i> Teléfonos *</label>
-            <div class="list_phones">
-              <input type="tel" name="phone" class="form-control-danger" id="phone"/>
-              <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
-              <small id="emailHelp" class="form-text text-muted">Puede escribir hasta tres contactos telefónicos.</small>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="correo" class="form-control-label"><i class="fa fa-envelope-o" aria-hidden="true"></i> Correo *</label>
-            <input type="email" name="mail" class="form-control-danger" id="mail"/>
-          </div>
-
-          <div class="form-group">
-            <label for="hora" class="form-control-label"><i class="fa fa-clock-o" aria-hidden="true"></i> Horario de Contacto</label>
-            <div class="row justify-content-center">
-              <div class="col-md-12">
-                <form class="form-inline form-control">
-                  <label class="mr-sm-2" for=""><i class="fa fa-clock-o" aria-hidden="true"></i> Hora</label>
-                  <input type="time" name="hora " id="hour" name="" value="">
-                  <label for="">-</label>
-                  <input type="time" name="hora2 " id="hour" name="" value="">
-                  <label for=""> hrs</label>
-                </form>
-
-              </div>
-              <div class="col-md-12 mt-2">
-                <form class="form-inline" action="index.html" method="post">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Días *</label>
-                  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                    <option selected>Seleccione...</option>
-                    <option name="dias"value="1">Lunes a viernes</option>
-                    <option name="dias"value="2">Lunes a sábado</option>
-                    <option name="dias"value="3">Todos los días</option>
-                    <option name="dias"value="4">Personalizado</option>
-                  </select>
-                </form>
-
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <label for="recipient-name" class="form-control-label"><i class="fa fa-server" aria-hidden="true"></i> Servicios *</label><br>
-              <div class="row">
-                <div class="col-md-4 col-sm-6">
-                  <div class="form-check form-check-inline">
-                    <label class="custom-control custom-checkbox">
-                      <input name="servicios"type="checkbox" class="custom-control-input">
-                      <span class="custom-control-indicator"></span>
-                      <span title="Plataforma Web, App Android/iOS" class="custom-control-description">Página</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="form-check form-check-inline">
-                    <label class="custom-control custom-checkbox">
-                      <input name="servicios"type="checkbox" class="custom-control-input">
-                      <span class="custom-control-indicator"></span>
-                      <span title="Capacitación" class="custom-control-description">Asesoría tecnológica</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="form-check form-check-inline">
-                    <label class="custom-control custom-checkbox">
-                      <input name="servicios"type="checkbox" class="custom-control-input">
-                      <span class="custom-control-indicator"></span>
-                      <span title="Desarrollo de dispositivos electrónicos"class="custom-control-description">Intenet de las cosas</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-sm-6">
-                  <div class="form-check form-check-inline">
-                    <label class="custom-control custom-checkbox">
-                      <input name="servicios"type="checkbox" class="custom-control-input">
-                      <span class="custom-control-indicator"></span>
-                      <span title="Electricidad"class="custom-control-description">Energías alternativas</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="form-check form-check-inline">
-                    <label class="custom-control custom-checkbox">
-                      <input name="servicios"type="checkbox" class="custom-control-input">
-                      <span class="custom-control-indicator"></span>
-                      <span title=""class="custom-control-description">Sistemas de Seguridad</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                  <div class="form-check form-check-inline">
-                    <label class="custom-control custom-checkbox">
-                      <input name="servicios"type="checkbox" class="custom-control-input">
-                      <span class="custom-control-indicator"></span>
-                      <span title="Telefonía" class="custom-control-description">Telecom</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-                <label for="message"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción</label>
-               <textarea class="form-control" id="message" name="Mensaje" placeholder="Describa su proyecto a grandes rasgos" rows="7"></textarea>
-           </div>
-           <div class="modal-footer d-flex justify-content-center">
-               <button type="button" class="btn btn-outline-danger boton_modal" data-dismiss="modal">Close</button>
-               <input type="submit" class="btn btn-outline-primary boton_modal" value="Enviar">
-           </div>
-         </div>
-        </form>
-      </div>
-        </div>
-      </div>
-    </div>
     <div class="inicio">
       <div id="whatsappdiv"class="align-self-right whatsapp mt-5">
-        <a href="https://api.whatsapp.com/send?phone=525576112053" id="whats_cont" class="rounded-circle"><i id="whats" class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
-      </div>
+          <a href="https://api.whatsapp.com/send?phone=525576112053" id="whats_cont" class="rounded-circle"><img id="whats" src="statics/images/whats.png" alt="whats"></a>
+        </div>
         <div class="hero justify-content-center">
            <img class="logo img-fluid rounded mx-auto d-block float-center" alt="Responsive image" src="statics/images/logo.png" alt="Digimundo LOGO">
            <div class=" desplegable">
@@ -412,6 +263,227 @@
       </ul>
     </div>
   </footer>
+  <div class="modal fade" id="cotizaya" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" id="body-cotiza">
+        <div class="modal-header" id="modal_header">
+          <img class="rounded mx-auto d-block img-fluid mt-2" id="log" src="statics/images/logo.png" alt="Digimundo LOGO">
+            <button type="button" class="btn btn-danger sticky-top align-baseline close boton_modal" id="close_modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="title d-flex justify-content-center">
+            <h2 class="modal-title" id="cotizamodal">¡Cotiza ya!</h2>
+          </div>
+          <div class="inicio_form">
+            <p class="parrafo_asesor">Los campos marcados con *  son obligatorios.</p>
+          </div>
+
+          <form action="envio.php" class="" id="datos_cliente" method="post">
+
+
+            <div class="form-group justify-content-center">
+              <label for="contact" class="form-control-label"><i class="fa fa-user-o" aria-hidden="true"></i> Contacto *</label>
+              <input type="text" class="form-control" name="nombre" id="contact" placeholder="Contacto" required>
+            </div>
+
+        <div class="form-group">
+          <label for="job" class="form-control-label"><i class="fa fa-address-card-o" aria-hidden="true"></i> Puesto</label>
+          <input type="text" class="form-control" name="Puesto" id="job">
+        </div>
+
+        <div class="form-group">
+          <label for="company" class="form-control-label"><i class="fa fa-building-o" aria-hidden="true"></i> Empresa *</label>
+          <input type="text" class="form-control" name="Empresa" id="company" required>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-control-label"><i class="fa fa-phone-square" aria-hidden="true"></i> Teléfonos *</label>
+          <div class="list_phones">
+            <input type="tel" name="phone" class="form-control-danger" id="phone"/>
+            <button type="button" name="button" class="add_more btn btn-sm btn-outline-danger boton_modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <small id="emailHelp" class="form-text text-muted">Puede escribir hasta tres contactos telefónicos.</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="correo" class="form-control-label"><i class="fa fa-envelope-o" aria-hidden="true"></i> Correo *</label>
+          <input type="email" name="mail" class="form-control-danger" id="mail"/>
+        </div>
+
+        <div class="form-group">
+          <label for="hora" class="form-control-label"><i class="fa fa-clock-o" aria-hidden="true"></i> Horario de Contacto</label>
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <form class="form-inline form-control">
+                <label class="mr-sm-2" for=""><i class="fa fa-clock-o" aria-hidden="true"></i> Hora</label>
+                <input type="time" name="hora " id="hour" name="" value="">
+                <label for="">-</label>
+                <input type="time" name="hora2 " id="hour" name="" value="">
+                <label for=""> hrs</label>
+              </form>
+
+            </div>
+            <div class="col-md-12 mt-2">
+              <form class="form-inline" action="index.html" method="post">
+                <label class="mr-sm-2" for="inlineFormCustomSelect"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Días *</label>
+                <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                  <option selected>Seleccione...</option>
+                  <option name="dias"value="1">Lunes a viernes</option>
+                  <option name="dias"value="2">Lunes a sábado</option>
+                  <option name="dias"value="3">Todos los días</option>
+                  <option id="personal" name="dias"value="4">Personalizado</option>
+                </select>
+              </form>
+            </div>
+
+            <div class="form-group mt-3 personalizado">
+              <label for="recipient-name" class="form-control-label"> Seleccione sus días </label><br>
+              <div class="row">
+                <div class="col-md-3 col-sm-4">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Lunes</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Martes</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Miércoles</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Jueves</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Viernes</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Sábado</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="form-check form-check-inline">
+                    <label class="custom-control custom-checkbox">
+                      <input name="dayp" type="checkbox" class="custom-control-input">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-description">Domingo</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+
+          </div>
+          <div class="form-group mt-3">
+            <label for="recipient-name" class="form-control-label"><i class="fa fa-server" aria-hidden="true"></i> Servicios *</label><br>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="form-check form-check-inline">
+                  <label class="custom-control custom-checkbox">
+                    <input name="servicios"type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span title="Plataforma Web, App Android/iOS" class="custom-control-description">Página</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="form-check form-check-inline">
+                  <label class="custom-control custom-checkbox">
+                    <input name="servicios"type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span title="Capacitación" class="custom-control-description">Asesoría tecnológica</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="form-check form-check-inline">
+                  <label class="custom-control custom-checkbox">
+                    <input name="servicios"type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span title="Desarrollo de dispositivos electrónicos"class="custom-control-description">Intenet de las cosas</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="form-check form-check-inline">
+                  <label class="custom-control custom-checkbox">
+                    <input name="servicios"type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span title="Electricidad"class="custom-control-description">Energías alternativas</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="form-check form-check-inline">
+                  <label class="custom-control custom-checkbox">
+                    <input name="servicios"type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span title=""class="custom-control-description">Sistemas de Seguridad</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="form-check form-check-inline">
+                  <label class="custom-control custom-checkbox">
+                    <input name="servicios"type="checkbox" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span title="Telefonía" class="custom-control-description">Telecom</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+              <label for="message"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción</label>
+             <textarea class="form-control" id="message" name="Mensaje" placeholder="Describa su proyecto a grandes rasgos" rows="7"></textarea>
+         </div>
+         <div class="modal-footer d-flex justify-content-center">
+             <button type="button" class="btn btn-outline-danger boton_modal" data-dismiss="modal">Close</button>
+             <input type="submit" class="btn btn-outline-primary boton_modal" value="Enviar">
+         </div>
+       </div>
+      </form>
+    </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

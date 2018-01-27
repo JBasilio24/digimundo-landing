@@ -1,5 +1,4 @@
 <?php
-if(isset($_POST['submit'])){
     $encoding = "utf-8";
 // Preferences for Subject field
     $subject_preferences = array(
@@ -59,5 +58,5 @@ if(isset($_POST['submit'])){
 
 // Redirect
   header('Location: index.html');
-}
+
 ?>
