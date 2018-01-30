@@ -10,6 +10,14 @@ $(document).ready(function(){
 			$(".nuestros_clientes").css({'margin-top':".5em"});
 	});
 });
+// Change background color for navbar
+$(document).scroll(function(){
+  if($(this).scrollTop() > 20) {
+    $('#navbar-main').css({"background-color":"rgba(0,0,0,0.8)"});
+  } else {
+    $('#navbar-main').css({"background-color":"rgba(0,0,0,0.4)"});
+  }
+});
 /*mover botón whatsapp*/
 		var whatsapp = document.getElementById('whats');
 		var mc = new Hammer(whatsapp);
@@ -50,20 +58,6 @@ $( function() {
         }
     });
 });
-/*mover slide*/
-
-
-
-
-//Change background-image in our services
-/*$(document).ready(function(){
-		$('.fondo').fadeIn(2000);
-		$('.imagen').hide();
-	});
-});*/
-
-/*When the user clicks on the button,
-toggle between hiding and showing the dropdown content*/
 function showMenu() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -114,33 +108,6 @@ $(document).ready(function(){
 		$('.add_more').show();
 	})
 });
-/*validate form
-$(document).ready(function(){
-	$("#datos_cliente").validate({
-		rules:{
-			Contacto:{required:true,
-								maxlength:50
-			},
-			Empresa:{required:true},
-			Telefono:{required:true},
-			dias:{required:true}
-			},
-			messages:{
-				Contacto:{
-					required: "Por favor ingrese un contacto...",
-				},
-				Empresa:{
-					required: "Por favor indique el nombre de la empresa",
-				},
-				Telefono:{
-					required: "Escriba por lo menos un número telefónico por favor",
-				},
-				dias:{
-					required:"Llene este campo por favor...",
-			}
-		}
-	});
-});*/
 /*Customer banner*/
 var slider = document.querySelector(".slier-prin");
 	slider.innerHTML += slider.innerHTML;
@@ -166,20 +133,3 @@ $(document).ready(function(){
 		$('.fondo').css({"display":'none'});
 	});
 });
-/**/
-/*send contact
-$(document).ready(function(){
-	$('#datos_cliente').submit(function(){
-		var url = "../envio.php"
-
-		$.ajax({
-			type:"POST",
-			url:url,
-			data: $('#datos_cliente').serialize(),
-			success: function(data){
-				$('#result').html(data);
-			}
-		});
-		return false;
-	});
-});*/

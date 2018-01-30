@@ -491,7 +491,6 @@ h4.parrafo{
 	background: rgba(0,0,0,.25);
 }
 .slier-prin {
-	overflow-y: scroll;
 	display: inline-flex;
 	-moz-animation: slider 20s infinite linear;
 	-webkit-animation: slider 20s infinite linear;
@@ -581,8 +580,9 @@ h4.parrafo{
 	right:0px;
 }
 #whats{
-	height: 45px;
-	width: 45px;
+	z-index: 10;
+	height: 50px;
+	width: 50px;
 	right: 30px; top: 100px;
 	position: fixed;
 	cursor: pointer;
@@ -827,13 +827,13 @@ footer .copy {
 		height: 960px;
 	}
 	#whats{
+		z-index: 10;
 		height: 35px;
 		width: 35px;
 		right: 30px; top: 100px;
 		position: absolute;
 		cursor: pointer;
 		margin-left: 0px;
-		background-color: green;
 		text-decoration: none;
 		border-radius: 100px;
 		color: white;
@@ -1026,19 +1026,15 @@ footer .copy {
 		width: 70%;
 	}
 	#whats{
-		height: 35px;
-		width: 35px;
-		right: 30px; top: 100px;
+		z-index: 10;
+		height: 50px;
+		width: 50px;
+		right: 30px; top: 70px;
 		position: relative;
 		cursor: pointer;
 		margin-left: 0px;
-		background-color: green;
 		text-decoration: none;
 		border-radius: 100px;
 		color: white;
-		padding-bottom: 4px;
-		padding-top: 3px;
-		padding-left: 4.5px;
-		padding-right: 5px;
 	}
 }
