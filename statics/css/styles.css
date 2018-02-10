@@ -310,7 +310,6 @@ div.nuestros-servicios{
 	height: 30%;
 	margin: auto;
 }
-
 .grid {
   width: 80%;
   clear: both;
@@ -333,7 +332,6 @@ div.nuestros-servicios{
   text-align: center;
   cursor: pointer;
 }
-
 .grid figure img {
   position: relative;
   display: block;
@@ -347,7 +345,6 @@ div.nuestros-servicios{
   height: auto;
   width: auto;
 }
-
 .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -492,9 +489,9 @@ h4.parrafo{
 }
 .slier-prin {
 	display: inline-flex;
-	-moz-animation: slider 20s infinite linear;
-	-webkit-animation: slider 20s infinite linear;
-	animation: slider 20s infinite linear;
+	-moz-animation: slider 40s infinite linear;
+	-webkit-animation: slider 40s infinite linear;
+	animation: slider 40s infinite linear;
 	height: 100%;
 	width: auto;
 }
@@ -581,8 +578,8 @@ h4.parrafo{
 }
 #whats{
 	z-index: 10;
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	right: 30px; top: 100px;
 	position: fixed;
 	cursor: pointer;
@@ -633,7 +630,7 @@ footer {
   margin: 0;
 }
 .face:hover{
-	color: #1A5276;
+	color: gray;
 }
 footer .footer {
 
@@ -955,7 +952,7 @@ footer .copy {
 		margin-left: 1.4em;
 	}
 }
-@media screen and (min-width: 1300px) and (max-width: 3900px){
+@media screen and (min-width: 1367px) and (max-width: 3900px){
 	.container-services{
 		height: 695px;
 		padding-bottom: 1.6em;
@@ -971,8 +968,35 @@ footer .copy {
 	  height: auto;
  		background-color: rgba(0,0,0,0.3);
 	}
+	#si, #keff{
+		padding-top: .05em;
+		width: 150px;
+	}
+	#cristobal{
+		padding-top: .2em;
+		width: auto;
+	}
 	.inicio_nosotros h2{
 		margin-left: 2.8em;
+	}
+	#whats{
+		height: 70px;
+		width: 70px;
+	}
+	.parrafo_asesor{
+		font-size: 22px;
+		width: 85%;
+		margin: 0 auto;
+		margin-top: 4em;
+	}
+	.serv_img{
+		width: 80%;
+	}
+	#asesor{
+		margin-bottom: 1.5em;
+		margin-right: 1em;
+		width: 100%;
+		margin-right: 2em;
 	}
 }
 /*movil horizontal*/
@@ -999,9 +1023,18 @@ footer .copy {
 	}
 }
 /*laptos 14-15 " */
-@media (min-width: 1025px) and (max-width: 1332px) {
-  .container-services{
-		height: 400px;
+@media (min-width: 1025px) and (max-width: 1366px) {
+	.container-services{
+		height: 62vh;
+	}
+	.grid{
+		padding-bottom: 1em;
+	}
+	.nuestros_servicios{
+		height: 75vh;
+	}
+	h2.titulo{
+		padding-top: .5em;
 	}
 	.nuestros_clientes{
 		display: block;
@@ -1027,9 +1060,9 @@ footer .copy {
 	}
 	#whats{
 		z-index: 10;
-		height: 50px;
-		width: 50px;
-		right: 30px; top: 70px;
+		height: 60px;
+		width: 60px;
+		right: 15px; top: 70px;
 		position: relative;
 		cursor: pointer;
 		margin-left: 0px;
