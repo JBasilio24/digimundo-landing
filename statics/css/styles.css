@@ -71,7 +71,8 @@ body {
 	padding-top: -15px;
 }
 
-div.digimundo{
+div.digimundo,
+div.digimundo-nosotros{
   position: absolute;
   padding: 0;
   margin: 0 auto;
@@ -761,10 +762,10 @@ footer .copy {
 	  color: #ffffff;
 	}
 	#titulo{
-		padding-top: 1em;
+		padding-top: .5em;
 		margin:0 auto;
 	  font-family: sans-serif;
-	  font-size: 40px;
+	  font-size: 32px;
 	  color: #ffffff;
 	}
 	.whatsapp{
