@@ -104,7 +104,6 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  border-bottom: 2px solid gray;
 }
 #logo-nav {
   width: 150px;
@@ -663,7 +662,6 @@ footer .copy {
 		width: 80%;
 		max-width: 1400px;
 		margin: 0 auto;
-		border-bottom: 1px solid #FFF;
 		padding-bottom: 25px;
 	}
 	#hour{
@@ -817,7 +815,6 @@ footer .copy {
 		width: 80%;
 		max-width: 1400px;
 		margin: 0 auto;
-		border-bottom: 1px solid #FFF;
 		padding-bottom: 25px;
 	}
 	.container-services{
@@ -1025,7 +1022,7 @@ footer .copy {
 /*laptos 14-15 " */
 @media (min-width: 1025px) and (max-width: 1366px) {
 	.container-services{
-		height: 62vh;
+		height: 60vh;
 	}
 	.grid{
 		padding-bottom: 1em;
