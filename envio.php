@@ -9,18 +9,17 @@
         );
 
 // Multiple recipients
-    $to = array('charlixd.cm@gmail.com.mx',
-    'ceo@digimundo.com.mx');
-    $from_contacto = $_POST["nombre"];
-    $from_puesto = $_POST['Puesto'];
-    $from_company = $_POST['Empresa'];
+    $to = 'charlixd.cm@gmail.com.mx';
+    $from_contacto = $_POST["name"];
+    $from_puesto = $_POST['job'];
+    $from_company = $_POST['company'];
     $from_phone = $_POST['phone'];
     $from_mail = $_POST['mail'];
     $from_hour = $_POST['hora'];
     $from_hour2 = $_POST['hora2'];
     $from_days = $_POST['dias'];
     $from_services = $_POST['servicios'];
-    $from_description = $_POST['Mensaje'];
+    $from_description = $_POST['message'];
 
 // Subject
     $subject = 'Nuevo mensaje de Digimundo';
@@ -48,6 +47,7 @@
 // Mail header
   $header = "Content-type: text/html; charset=".$encoding." \r\n";
   $header .= "De: ".$from_contacto." <".$from_mail."> \r\n";
+  $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
   $header .= "MIME-Version: 1.0 \r\n";
   $header .= "Content-Transfer-Encoding: 8bit \r\n";
   $header .= "Fecha: ".date("r (T)")." \r\n";
