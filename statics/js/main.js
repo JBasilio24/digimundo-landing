@@ -1,3 +1,9 @@
+window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-114185590-1');
+
 $ = jQuery.noConflict();
 //Show and Hide our services
 $(document).ready(function(){
