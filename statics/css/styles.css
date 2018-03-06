@@ -663,7 +663,7 @@ footer .copy {
 @media screen and (min-width: 768px){
 	/*Navbar styles*/
 	#navbar-container {
-		width: 80%;
+		width: 90%;
 		max-width: 1400px;
 		margin: 0 auto;
 		padding-bottom: 25px;
