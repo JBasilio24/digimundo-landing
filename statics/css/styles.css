@@ -664,6 +664,7 @@ footer .copy {
 	/*Navbar styles*/
 	#navbar-container {
 		width: 90%;
+		position: relative;
 		max-width: 1400px;
 		margin: 0 auto;
 		padding-bottom: 25px;
