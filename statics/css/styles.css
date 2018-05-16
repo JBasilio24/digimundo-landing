@@ -758,6 +758,20 @@ footer .copy {
 	#cristobal{
 		width: auto;
 	}
+ #revimex, #ramar {
+	 justify-content: center;
+	 text-align: center;
+	 align-items: center;
+	 display: flex;
+	 margin: 0 auto;
+	 width: 180px;
+ }
+ #ramar {
+	 width: 210px;
+ }
+ #revimex {
+	 margin-top: 20%;
+ }
 	.parrafo{
 		margin-left: 5rem;
 		margin-right: 5rem;
