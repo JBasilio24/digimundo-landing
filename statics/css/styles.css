@@ -779,7 +779,7 @@ footer .copy {
 	/*Nosotros template*/
 	.nosotros_template{
 		position: relative;
-		background-image: url("https://agendumsolutions.com/wp-content/uploads/2015/10/slider3.jpg");
+		background-image: url("../images/nosotrosB.jpg");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
